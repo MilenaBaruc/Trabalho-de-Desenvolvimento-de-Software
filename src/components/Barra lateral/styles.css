@@ -78,6 +78,7 @@ border-left: 10px solid #774102;
 overflow-x: hidden;
 transition: 0.5s;
 }
+
 .navigation:hover{
     width: 240px;
 }
