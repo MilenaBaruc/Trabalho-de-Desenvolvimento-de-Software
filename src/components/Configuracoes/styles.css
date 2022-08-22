@@ -2,6 +2,8 @@
 
 body{
     background-color: #F3CD84;
+    border: 0;
+    margin: 0;    
 }
 
 .main{
@@ -9,37 +11,47 @@ body{
 }
 
 .perfil{
+    position: relative;
+    right: 450px;
+    top: 0px;
     display: flex;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .perfil-image{
+    position: relative;
+    left: 89px;
+    top: 0px;
     border: 5px solid white;
     border-radius: 50%;
     margin: 10px 55px 40px 170px;    
 }
 .perfil > h1{
-    font-size: 40px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+    font-size: 38px;
 }
 
 .perfil > h3{
-    position: absolute;
-    left: 410px;
-    top: 70px;
+    position: relative;
+    left: -230px;
+    top: 65px;
     opacity: 0.75;
+    font-size: 24px;
 }
 
 .box{
-    position: absolute;
-    width: 850px;
-    height: 280px;
+    position: relative;
+    left: -100px;
+    top: 20px;
+    width: 1000px;
+    height: 300px;
     background-color: white;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    
-    margin-left: 170px;
-    margin-right: 200px;
+    margin-left: 0px;
     padding: 10px 20px;
 }
 
@@ -47,14 +59,24 @@ body{
     font-size: 23px;
     color: #774102;
     margin: 0;
-    text-decoration:underline;
+    text-decoration: underline;
 }
+.message{
+    position: absolute;
+    left: 650px;
+    bottom: 200px;
+    max-width: 500px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    word-break: keep-all;
+    color: #774102;
 
+}
 .input-box{
-    width: 350px;
-    height: 20px;
+    width: 390px;
+    height: 35px;
     margin: 20px 0px 0px 20px;
-    
     border: 2px solid #774002ad;
     border-radius: 5px;
     outline: none;
@@ -70,7 +92,7 @@ body{
 
 .btn-save{
     position: absolute;
-    width: 260px;
+    width:250px;
     height: 45px;
     background-color: #919B1A;
     border: none;
@@ -78,7 +100,6 @@ body{
     outline: none;
     right: 15px;
     bottom: 15px;
-
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -89,15 +110,14 @@ body{
 }
 
 .btn-delete{
+    position: relative;
+    bottom: -30px;
     width: 260px;
     height: 45px;
-    margin: 325px 0px 10px 170px;
-
     background-color: #D05416;
     border: none;
     border-radius: 5px;
     outline: none;
-
     color: white;
     font-size: 20px;
     cursor: pointer;

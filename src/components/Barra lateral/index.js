@@ -1,7 +1,7 @@
 import React, {Fragment} from "react";
 
 import "./styles.css";
-import perfil from '../../assets/Imagens Perfil/verde escuro.jpg'
+import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
 import logo from '../../assets/Logo Girassol.png'
 
 

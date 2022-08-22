@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Cadastro</title>
+
+        <link rel="icon" href="images/g1.png">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+		integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		
+        <link rel = 'stylesheet' href = 'css/estilo.css'/>
+	
+	</head> 
+	
+	<body>
+		<div class="container" >
+            <a class="links" id="paracadastro"></a>
+            <a class="links" id="paralogin"></a>
+            
+            <div class="content">      
+              
+        
+              <!--FORMULÁRIO DE CADASTRO-->
+              <div id="cadastro">
+                <form method="post" action=""> 
+                    <h1>Cadastro</h1> 
+                  
+                    <p> 
+                        <label for="nome_cad">Seu nome:</label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Milenuda Baruc" />
+                    </p>
+                  
+                    <p> 
+                       <label for="email_cad">Seu e-mail:</label>
+                       <input id="email_cad" name="email_cad" required="required" type="email" placeholder="suamatricula@aluno.unb.br"/> 
+                    </p>
+                  
+                    <p> 
+                        <label for="senha_cad">Sua senha:</label>
+                        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="*******"/>
+                    </p>
+                  
+                    <p> 
+                        <input type="submit" value="Cadastrar"/> 
+                    </p>
+                  
+                    <p>
+                        Já possui conta?<a class='text-t' href="login.html"> Ir para Login</a>
+                    </p>
+
+                    <!--<a href="t1.html" class="navbar-brand">
+                        <span class="img-logo"></span>-->
+                    </a>
+
+                </form>
+              </div>
+            </div>
+          </div> 
+          <a href="t1.html" class="navbar-brand">
+            <span class="img-logo"></span>
+        </a>
+	</body>
+
+</html>

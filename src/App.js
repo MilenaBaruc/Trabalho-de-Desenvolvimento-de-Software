@@ -8,8 +8,8 @@ import Bar from './components/Barra lateral';
 function App() {
   return (
     <Fragment>
-      <Bar/>
-      <Config/>
+    <Bar/>
+    <Config/>
     </Fragment>
   );
 }
