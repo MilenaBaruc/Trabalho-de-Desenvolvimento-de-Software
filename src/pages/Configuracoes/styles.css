@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 body{
     background-color: #F3CD84;
@@ -7,7 +7,7 @@ body{
 }
 
 .main{
-    font-family: 'Suwannaphum', serif;
+    font-family: 'Bree Serif', serif;
 }
 
 .perfil{
