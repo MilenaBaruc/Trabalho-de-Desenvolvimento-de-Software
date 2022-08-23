@@ -34,6 +34,12 @@ background: #ffa14a;
     font-size: 30px;
 }
 
+.icon{
+    width: 10px;
+    height: 10px;
+
+}
+
 .perfilPic{
     position: absolute;
     top: 200px;
@@ -160,10 +166,5 @@ border-radius: 50%;
 .icon-exit{
     position: absolute;
     left: 180px;
-    top: 230px;
+    top: 240px;
 }
-/*
-
-#FF7C01
-
-*/

@@ -1,16 +1,19 @@
+import React from 'react';
 import logo from './assets/Logo Girassol.png';
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import './App.css';
 
-import Config from './pages/Configuracoes';
-import Bar from './components/Barra lateral';
-import Materias from './pages/materias';
+
+import Config from './pages/Configuracoes/config.js';
+import Bar from './components/Barra lateral/index.js';
+import Materias from './pages/materias/index.js';
+import Home from './pages/Home/home.js';
 
 function App() {
   return (
     <Fragment>
-    <Bar/>
-    <Materias/>
+      <Home/>
+      <Bar/>   
     </Fragment>
   );
 }
