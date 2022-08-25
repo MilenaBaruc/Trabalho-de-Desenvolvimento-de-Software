@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+.main{
+    position: relative;
+    font-family: 'Bree Serif', serif;
+}
+
+h1{
+    position: relative;
+    left: -350px;
+    top: -80px;
+    color: #551D04;
+}
+hr{
+    position: relative;
+    left: -360px;
+    top: -70px;
+    border: 0px;
+    border-top: 3px solid #551D04;
+    width: 500px;
+}
+
+.btn-add{
+    position: relative;
+    left: -360px;
+    top: -50px;
+    width: 250px;
+    height: 330px;
+    border-radius: 20px;
+    background-color: #fabf88;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-add:active{
+    background: #facb55;
+}
+
+
+.btn-add  .btn-img{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
