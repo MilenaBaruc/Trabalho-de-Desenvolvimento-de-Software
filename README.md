@@ -8,4 +8,6 @@ ICONES : yarn add react-icons --save
 
 ROUTES : yarn add react-router-dom
 
+Express: npm install express-generator -g
+
 
