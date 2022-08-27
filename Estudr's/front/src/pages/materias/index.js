@@ -2,9 +2,9 @@ import React, {Fragment} from "react";
 import add from '../../assets/add.png';
 import "./styles.css";
 
-function addbtn(){
+//function addbtn(){
         
-}
+//}
 
 
 export default function Materias(){
@@ -18,7 +18,7 @@ export default function Materias(){
 
             <div className="divdobtn">
                 <button class="btn-add" type="submit"> 
-                    <img class="btn-img" src={add}/> Adicionar nova matéria</button>
+                    <img class="btn-img" src={add} alt="Botão Adicionar Matéria"/> Adicionar nova matéria</button>
             </div>
 
         </div>

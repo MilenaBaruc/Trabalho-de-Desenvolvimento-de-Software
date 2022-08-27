@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./App.css";
 
-import Config from './pages/Configuracoes/config.js';
-import Materias from './pages/materias/index.js';
+//import Config from './pages/Configuracoes/config.js';
+//import Materias from './pages/materias/index.js';
 import Home from './pages/Home/home.js';
+import Bar from './components/Barra lateral/index.js'
 
 class App extends Component {
     constructor(props) {
@@ -25,8 +26,9 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
+            <div className="App"> 
                 <Home/>
+                <Bar/>
             </div>
         );
     }

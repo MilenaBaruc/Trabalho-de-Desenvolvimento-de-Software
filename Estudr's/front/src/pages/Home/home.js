@@ -7,8 +7,6 @@ import Iteams from "../../assets/Imagens Botões Home/teams.png";
 import Iemail from "../../assets/Imagens Botões Home/email.png";
 import Ionedrive from "../../assets/Imagens Botões Home/onedrive.png";
 
-const ssigaa = "https://sig.unb.br/sigaa/verTelaLogin.do";
-
 export default function Home(){
     return( 
         <Fragment>
@@ -28,17 +26,17 @@ export default function Home(){
             </div>
             
             <div class="btn">
-                    <a class="btn-sigaa" href="https://sig.unb.br/sigaa/verTelaLogin.do"><img class="sigaa" src={Isigaa} href="https://sig.unb.br/sigaa/verTelaLogin.do" width= "3px" height="35px"/> Sigaa</a>
+                    <a class="btn-sigaa" href="https://sig.unb.br/sigaa/verTelaLogin.do"><img class="sigaa" src={Isigaa} href="https://sig.unb.br/sigaa/verTelaLogin.do" width= "3px" height="35px" alt="Botão Sigaa"/> Sigaa</a>
                     
-                    <a class="btn-aprender" href="https://aprender3.unb.br/login/index.php"><img class="aprender" src={Iaprender} width= "3px" height="35px"/>  
+                    <a class="btn-aprender" href="https://aprender3.unb.br/login/index.php"><img class="aprender" src={Iaprender} width= "3px" height="35px" alt="Botão Aprender 3"/>  
                     Aprender</a>
                     
-                    <a class="btn-teams" href="https://www.microsoft.com/pt-br/microsoft-teams/log-in"><img class="teams" src={Iteams} width= "3px" height="35px"/> Teams</a>
+                    <a class="btn-teams" href="https://www.microsoft.com/pt-br/microsoft-teams/log-in"><img class="teams" src={Iteams} width= "3px" height="35px" alt="Botão Teams"/> Teams</a>
                      
-                    <a class="btn-email" href="https://outlook.office.com/mail/"><img class="email-img" src={Iemail} width= "3px" height="35px"/> 
+                    <a class="btn-email" href="https://outlook.office.com/mail/"><img class="email-img" src={Iemail} width= "3px" height="35px" alt="Botão Outlook"/> 
                     Outlook</a>
                      
-                    <a class="btn-onedrive" href="https://onedrive.live.com/about/pt-br/signin/"><img class="onedrive" src={Ionedrive} width= "3px" height="35px"/> OneDrive</a>
+                    <a class="btn-onedrive" href="https://onedrive.live.com/about/pt-br/signin/"><img class="onedrive" src={Ionedrive} width= "3px" height="35px" alt="Botão One Drive"/> OneDrive</a>
                      
             </div>
             
