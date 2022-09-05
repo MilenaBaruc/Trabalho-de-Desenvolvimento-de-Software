@@ -9,3 +9,5 @@ ICONES : yarn add react-icons --save
 ROUTES : yarn add react-router-dom
 
 
+backend:
+npm i mongoose -g
