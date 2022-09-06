@@ -14,3 +14,4 @@ npm init -y
 npm i express
 npm install nodemon --save-dev
 npm i mongoose -g
+npm i dotenv
