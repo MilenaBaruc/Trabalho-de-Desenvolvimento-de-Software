@@ -5,7 +5,6 @@ import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
 
 export default function Config(){
 
-
     return(
         <Fragment>
             <div class="main" >
