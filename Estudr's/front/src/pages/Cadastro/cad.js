@@ -15,9 +15,9 @@ export default function Cad(){
             <div class="right-box">
                 <h1>Crie sua conta</h1>
                     <p class="textinho">Use seu email para se registrar!</p>
-                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Nome" />
                     <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Senha" />
                     <button>Cadastrar</button>
                     <p class="conta">Já possui uma conta?</p>
                     <a href='#'>Entre por aqui!</a>

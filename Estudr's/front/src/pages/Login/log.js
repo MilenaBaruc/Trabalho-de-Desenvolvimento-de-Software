@@ -16,7 +16,7 @@ export default function Log(){
                 <h1>Entre aqui!</h1>
                     <p class="textinho">Use seu email e senha</p>
                     <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Senha" />
                     <button>Entrar</button>
                     <p class="conta">Não possui uma conta?</p>
                     <a href='#'>Crie uma aqui!</a>
