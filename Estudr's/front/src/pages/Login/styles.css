@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 *{
-    margin: 0px;
+    box-sizing: border-box;
 }
 
 body{
-    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:  #ffa14a;
 }
 
 .main{
+    margin-top: 5vh;
     font-family: 'Montserrat', sans-serif;  
     display: flex;
     justify-content: center;
@@ -94,4 +98,5 @@ button:focus {
     margin: 0px;
     font-size: 13px;
     text-decoration: underline;
+    cursor: pointer;
 }

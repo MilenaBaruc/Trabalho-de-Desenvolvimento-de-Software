@@ -1,8 +1,8 @@
-import React, {Fragment} from "react";
+import React, { onClick, Fragment} from "react";
 import './styles.css';
 import girassol from "../../assets/girassol-cad.png"
 
-export default function Cad(){
+export default function Cad({setLoginForm}){
 
 	return(
 	<Fragment>
@@ -12,7 +12,7 @@ export default function Cad(){
                 <p class="textinhop">Todas as suas matérias num único lugar!</p> 
                 <img class="imagem" width="300" src={girassol}/> 
             </div>
-            <div class="right-box">
+            <div className="right-box">
                 <h1>Crie sua conta</h1>
                     <p class="textinho">Use seu email para se registrar!</p>
                     <input type="text" placeholder="Nome" />
@@ -20,7 +20,7 @@ export default function Cad(){
                     <input type="password" placeholder="Senha" />
                     <button>Cadastrar</button>
                     <p class="conta">Já possui uma conta?</p>
-                    <a href='#'>Entre por aqui!</a>
+                    <a onClick={setLoginForm}>Entre por aqui!</a>
             </div>
         </div>
 	</Fragment>

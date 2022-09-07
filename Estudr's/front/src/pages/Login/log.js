@@ -1,8 +1,9 @@
-import React, {Fragment} from "react";
+import React, { onClick, Fragment } from "react";
 import './styles.css';
 import girassol from "../../assets/girassol-cad.png"
+import setRegisterForm from '../../components/Modal/Modal';
 
-export default function Log(){
+export default function Log({setRegisterForm}){
 
 	return(
 	<Fragment>
@@ -19,7 +20,7 @@ export default function Log(){
                     <input type="password" placeholder="Senha" />
                     <button>Entrar</button>
                     <p class="conta">Não possui uma conta?</p>
-                    <a href='#'>Crie uma aqui!</a>
+                    <a onClick={setRegisterForm}>Crie uma aqui!</a>
             </div>
         </div>
 	</Fragment>

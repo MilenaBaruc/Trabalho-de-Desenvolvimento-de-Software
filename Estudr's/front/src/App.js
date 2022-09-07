@@ -2,13 +2,14 @@ import React, { Component } from "react";
 //import logo from "./logo.svg";
 //import "./App.css";
 
-import LoginCadastro from './pages/LogCad/index.js';
+import Modal from './components/Modal/Modal';
+
+import Cad from './pages/Cadastro/cad';
+import Log from './pages/Login/log';
+//import Home from './pages/Home/home.js';
+//import Bar from './components/Barra lateral/index.js';
 //import Config from './pages/Configuracoes/config.js';
 //import Materias from './pages/materias/index.js';
-import Cad from './pages/Cadastro/cad';
-import Log from './pages/Login/log'
-import Home from './pages/Home/home.js';
-import Bar from './components/Barra lateral/index.js'
 
 class App extends Component {
     constructor(props) {
@@ -29,7 +30,9 @@ class App extends Component {
 
     render() {
         return (
-            <Log/>
+            <div class="tela">
+                <Modal/>
+            </div>
         );
     }
 }
