@@ -4,7 +4,6 @@ import { AuthContext } from "../../components/contexts/auth";
 
 import './log.css';
 import girassol from "../../assets/girassol-cad.png"
-import setRegisterForm from '../../components/Modal/Modal';
 
 export default function Log(){
 
@@ -24,7 +23,7 @@ export default function Log(){
 	return(
 	<Fragment>
         <div className="login-body">
-            <div className="main">
+            <div className="login-main">
                 <div className="bem-vindo">
                     <h1 className="login-h1">Bem vindo ao Estuder's!</h1>
                     <p className="textinhop">Seu novo planner virtual!</p> 
@@ -33,7 +32,7 @@ export default function Log(){
                 <div className="login-box">
                     <h1 className="login-h1">Entre aqui!</h1>
                     <p className="textinho">Use seu email e senha</p>
-                    <form className="form" onSubmit={handleSubmit}>
+                    <form className="login-form" onSubmit={handleSubmit}>
                         <input 
                             className="log-imput"
                             type="email"
