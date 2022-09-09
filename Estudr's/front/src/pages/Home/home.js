@@ -1,15 +1,17 @@
 import React, {Fragment} from "react";
-import "./styles.css";
+import "./home.css";
 
 import Isigaa from "../../assets/Imagens Botões Home/sigaa.png";
 import Iaprender from "../../assets/Imagens Botões Home/aprender.png";
 import Iteams from "../../assets/Imagens Botões Home/teams.png";
 import Iemail from "../../assets/Imagens Botões Home/email.png";
 import Ionedrive from "../../assets/Imagens Botões Home/onedrive.png";
+import Bar from '../../components/Barra lateral/index-home.js';
 
 export default function Home(){
     return( 
         <Fragment>
+            <Bar/>
           <div class="main">
             <div class="titulo-inicio">
                 <h1>Início</h1>

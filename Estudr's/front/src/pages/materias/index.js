@@ -1,6 +1,8 @@
 import React, {Fragment} from "react";
 import add from '../../assets/add.png';
 import "./styles.css";
+import Bar from '../../components/Barra lateral/index-materias.js';
+
 
 //function addbtn(){
         
@@ -10,6 +12,7 @@ import "./styles.css";
 export default function Materias(){
     return( 
     <Fragment>
+            <Bar/>
         <div class="main">
             <div>
                 <h1>Matérias</h1>

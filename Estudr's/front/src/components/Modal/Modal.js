@@ -10,7 +10,7 @@ function Modal() {
   function setLoginForm(){
     setIsLogin(true)
   }
-
+  
   function setRegisterForm(){
     setIsLogin(false)
   }

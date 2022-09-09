@@ -2,11 +2,14 @@ import React, {Fragment} from "react";
 
 import "./styles.css";
 import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
+import Bar from '../../components/Barra lateral/index-config.js';
+
 
 export default function Config(){
 
     return(
         <Fragment>
+            <Bar/>
             <div class="main" >
                 <div class="perfil">
                     <img class="perfil-image" src={perfil} alt="user-icon" width="224px" height="224px"></img>

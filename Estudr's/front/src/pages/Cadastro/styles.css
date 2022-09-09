@@ -62,7 +62,7 @@ input {
     outline: 0;
 }
 
-.right-box > button{
+.right-box > form > button{
     border-radius: 20px;
 	border: 1px solid #F2eee3;
 	background-color: #f7b656;
@@ -90,7 +90,7 @@ button:focus {
     color: rgb(119, 119, 119);
 }
 
-.right-box > a{
+.right-box > form > a{
     color: rgb(119, 119, 119);
     margin: 0px;
     font-size: 13px;

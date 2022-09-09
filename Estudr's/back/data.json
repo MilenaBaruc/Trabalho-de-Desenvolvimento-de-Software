@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Maria Alice",
+      "email": "mariaalice@gmail.com"
+    },
+    {
+      "email": "victorhugo@gmail.com",
+      "name": "Victor",
+      "id": 2
+    },
+    {
+      "email": "nome@gmail.com",
+      "name": "Nome",
+      "id": 3
+    },
+    {
+      "email": "nome@gmail.com",
+      "name": "Nome",
+      "id": 4
+    }
+  ],
+  "materias": [
+    {
+      "id": 2,
+      "name": "Cálculo 1"
+    }
+  ]
+}
