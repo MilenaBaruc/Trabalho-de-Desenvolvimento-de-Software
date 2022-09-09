@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-.login-body{
+.cadastro-body{
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -9,31 +9,29 @@
     width: 100vw;
 }
 
-.login-main{
+.cadastro-main{
     font-family: 'Montserrat', sans-serif;  
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bem-vindo{
+.cadastro-bem-vindo{
     padding: 15px;
     text-align: center;
-
 }
 
-.login-h1{
+.cadastro-h1{
     font-size: 40px;
 }
 
-.textinhop{
+.cadastro-textinhop{
     margin: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-size: 18px;
 }
 
-
-.login-box{
+.cadastro-right-box{
     box-sizing: border-box;
 
     width: 410px;
@@ -51,21 +49,21 @@
 			0 10px 10px rgba(0,0,0,0.22);
 }
 
-.textinho{
+.cadastro-textinho{
     margin: 0px 0px 30px 0px;
 }
 
-.log-imput {
+.cadastro-input {
 	background-color: #f2eee3;
 	border: none;
 	padding: 12px 15px;
     border-radius: 10px;
-	margin: 15px 0px;
+	margin: 8px 0px;
 	width: 100%;
     outline: 0;
 }
 
-.login-btn{
+.cadastro-btn{
     border-radius: 20px;
 	border: 1px solid #F2eee3;
 	background-color: #f7b656;
@@ -80,20 +78,20 @@
     cursor: pointer;
 }
 
-.login-btn:active {
+.cadastro-btn:active {
 	transform: scale(0.95);
 }
 
-.login-btn:focus {
+.cadastro-btn:focus {
 	outline: none;
 }
 
-.conta{
+.cadastro-conta{
     margin: 10px 0px 0px 0px;
     color: rgb(119, 119, 119);
 }
 
-.login-link{
+.cadastro-p{
     color: rgb(119, 119, 119);
     margin: 0px;
     font-size: 13px;
