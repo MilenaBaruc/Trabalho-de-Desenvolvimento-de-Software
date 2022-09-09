@@ -13,15 +13,15 @@ export default function Materias(){
     return( 
     <Fragment>
             <Bar/>
-        <div class="main">
+        <div className="main">
             <div>
                 <h1>Matérias</h1>
             </div>
                 <hr/>
 
             <div className="divdobtn">
-                <button class="btn-add" type="submit"> 
-                    <img class="btn-img" src={add} alt="Botão Adicionar Matéria"/> Adicionar nova matéria</button>
+                <button className="btn-add" type="submit"> 
+                    <img className="btn-img" src={add} alt="Botão Adicionar Matéria"/> Adicionar nova matéria</button>
             </div>
 
         </div>

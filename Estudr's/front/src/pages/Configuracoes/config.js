@@ -10,21 +10,21 @@ export default function Config(){
     return(
         <Fragment>
             <Bar/>
-            <div class="main" >
-                <div class="perfil">
-                    <img class="perfil-image" src={perfil} alt="user-icon" width="224px" height="224px"></img>
+            <div className="main" >
+                <div className="perfil">
+                    <img className="perfil-image" src={perfil} alt="user-icon" width="224px" height="224px"></img>
                     <h1>Nome Sobrenome</h1>
                     <h3>email@email.com</h3>
                 </div>
 
-                <div class="box">
+                <div className="box">
                     <h2>Alterar senha</h2>
                     
-                    <input class="input-box" type="password" placeholder="senha atual" required maxLength="8" size="8" minLength="4"></input>
-                    <input class="input-box" type="password" placeholder="nova senha" required maxLength="8" size="8" minLength="4"></input>
-                    <input class="input-box" type="password" placeholder="repita a nova senha" required maxLength="8" size="8" minLength="4"></input>
+                    <input className="input-box" type="password" placeholder="senha atual" required maxLength="8" size="8" minLength="4"></input>
+                    <input className="input-box" type="password" placeholder="nova senha" required maxLength="8" size="8" minLength="4"></input>
+                    <input className="input-box" type="password" placeholder="repita a nova senha" required maxLength="8" size="8" minLength="4"></input>
                 
-                    <button class="btn-save" type="submit">Salvar alterações</button>
+                    <button className="btn-save" type="submit">Salvar alterações</button>
                 </div>
 
                 <div>
@@ -35,7 +35,7 @@ export default function Config(){
                 </ul>
                 </div>
 
-                <button class="btn-delete">Excluir conta</button>
+                <button className="btn-delete">Excluir conta</button>
 
             </div>
         </Fragment>

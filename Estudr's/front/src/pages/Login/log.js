@@ -22,32 +22,32 @@ export default function Log({setRegisterForm}){
 
 	return(
 	<Fragment>
-        <div class="main">
-            <div class="bem-vindo">
+        <div className="main">
+            <div className="bem-vindo">
                 <h1>Bem vindo ao Estuder's!</h1>
-                <p class="textinhop">Seu novo planner virtual!</p> 
-                <img class="imagem" width="300" src={girassol}/> 
+                <p className="textinhop">Seu novo planner virtual!</p> 
+                <img className="imagem" width="300" src={girassol}/> 
             </div>
-            <div class="right-box">
+            <div className="right-box">
                 <h1>Entre aqui!</h1>
-                    <p class="textinho">Use seu email e senha</p>
-                    <form class="form" onSubmit={handleSubmit}>
-                        <input 
-                            type="email"
-                            placeholder="Email" 
-                            value={email} 
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                        <input 
-                            type="password" 
-                            placeholder="Senha"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                        <button>Entrar</button>
-                        <p class="conta">Não possui uma conta?</p>
-                        <a onClick={setRegisterForm}>Crie uma aqui!</a>
-                    </form>
+                <p className="textinho">Use seu email e senha</p>
+                <form className="form" onSubmit={handleSubmit}>
+                    <input 
+                        type="email"
+                        placeholder="Email" 
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <input 
+                        type="password" 
+                        placeholder="Senha"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <button>Entrar</button>
+                    <p className="conta">Não possui uma conta?</p>
+                    <a onClick={setRegisterForm}>Crie uma aqui!</a>
+                </form>
             </div>
         </div>
 	</Fragment>

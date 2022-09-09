@@ -12,37 +12,37 @@ export default function Home(){
     return( 
         <Fragment>
             <Bar/>
-          <div class="main">
-            <div class="titulo-inicio">
+          <div className="main">
+            <div className="titulo-inicio">
                 <h1>Início</h1>
                 <hr/>
             </div>
             
-            <div class="mid">
-                <div class="tela-eventos">
+            <div className="mid">
+                <div className="tela-eventos">
                     <h2>Eventos da semana</h2>
                 </div>
-                <div class="tela-materias">
+                <div className="tela-materias">
                     <h2>Matérias</h2>
                 </div>    
             </div>
             
-            <div class="btn">
-                    <a class="btn-sigaa" href="https://sig.unb.br/sigaa/verTelaLogin.do"><img class="sigaa" src={Isigaa} href="https://sig.unb.br/sigaa/verTelaLogin.do" width= "3px" height="35px" alt="Botão Sigaa"/> Sigaa</a>
+            <div className="btn">
+                    <a className="btn-sigaa" href="https://sig.unb.br/sigaa/verTelaLogin.do"><img className="sigaa" src={Isigaa} href="https://sig.unb.br/sigaa/verTelaLogin.do" width= "3px" height="35px" alt="Botão Sigaa"/> Sigaa</a>
                     
-                    <a class="btn-aprender" href="https://aprender3.unb.br/login/index.php"><img class="aprender" src={Iaprender} width= "3px" height="35px" alt="Botão Aprender 3"/>  
+                    <a className="btn-aprender" href="https://aprender3.unb.br/login/index.php"><img className="aprender" src={Iaprender} width= "3px" height="35px" alt="Botão Aprender 3"/>  
                     Aprender</a>
                     
-                    <a class="btn-teams" href="https://www.microsoft.com/pt-br/microsoft-teams/log-in"><img class="teams" src={Iteams} width= "3px" height="35px" alt="Botão Teams"/> Teams</a>
+                    <a className="btn-teams" href="https://www.microsoft.com/pt-br/microsoft-teams/log-in"><img className="teams" src={Iteams} width= "3px" height="35px" alt="Botão Teams"/> Teams</a>
                      
-                    <a class="btn-email" href="https://outlook.office.com/mail/"><img class="email-img" src={Iemail} width= "3px" height="35px" alt="Botão Outlook"/> 
+                    <a className="btn-email" href="https://outlook.office.com/mail/"><img className="email-img" src={Iemail} width= "3px" height="35px" alt="Botão Outlook"/> 
                     Outlook</a>
                      
-                    <a class="btn-onedrive" href="https://onedrive.live.com/about/pt-br/signin/"><img class="onedrive" src={Ionedrive} width= "3px" height="35px" alt="Botão One Drive"/> OneDrive</a>
+                    <a className="btn-onedrive" href="https://onedrive.live.com/about/pt-br/signin/"><img className="onedrive" src={Ionedrive} width= "3px" height="35px" alt="Botão One Drive"/> OneDrive</a>
                      
             </div>
             
-            <div class="grade">
+            <div className="grade">
 <table border="1">
   <tr>
       <td>&nbsp;</td> <th>segunda</th> <th>terça</th> <th>quarta</th> <th>quinta</th> <th>sexta</th>

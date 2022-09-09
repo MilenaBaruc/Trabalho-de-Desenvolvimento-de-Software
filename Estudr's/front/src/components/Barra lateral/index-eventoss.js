@@ -23,47 +23,48 @@ export default function Bar(){
 
     return(
         <Fragment>
-            <div class="caixa">
-                <div class="navigation">
+            <div className="caixa">
+                <div className="navigation">
                     <ul>
+                        <div className='smalkdan'></div>
                         
-                        <Link to="/home"><img class="logo" src={logo} alt="logo"></img></Link>
+                        <Link to="/home"><img className="logo" src={logo} alt="logo"></img></Link>
                         <h1>Estuder's</h1>
                         
-                        <li class="list ">
+                        <li className="list ">
                             <p>
-                            <span class="icon"><Link to="/home"><AiFillHome/></Link></span>
-                            <span class="title"><Link to="/home">Início</Link></span>
+                            <span className="icon"><Link to="/home"><AiFillHome/></Link></span>
+                            <span className="title"><Link to="/home">Início</Link></span>
                             </p>
                         </li>
 
-                        <li class="list">
+                        <li className="list">
                             <p>
-                                <span class="icon"><Link to="/materias"><HiClipboard/></Link></span>
-                                <span class="title"><Link to="/materias">Disciplinas</Link></span>
+                                <span className="icon"><Link to="/materias"><HiClipboard/></Link></span>
+                                <span className="title"><Link to="/materias">Disciplinas</Link></span>
                             </p>
                         </li>
                         
-                        <li class="list active">
+                        <li className="list active">
                             <p>
-                                <span class="icon"><Link to="/eventos"><BsFillCalendarCheckFill/></Link></span>
-                                <span class="title"><Link to="/eventos">Tarefas e eventos</Link></span>
+                                <span className="icon"><Link to="/eventos"><BsFillCalendarCheckFill/></Link></span>
+                                <span className="title"><Link to="/eventos">Tarefas e eventos</Link></span>
                             </p>
                         </li>
                         
-                        <li class="list">
+                        <li className="list">
                             <p>        
-                                <span class="icon"><Link to="/config"><RiSettings3Fill/></Link></span>
-                                <span class="title"><Link to="/config">Configurações</Link></span>
+                                <span className="icon"><Link to="/config"><RiSettings3Fill/></Link></span>
+                                <span className="title"><Link to="/config">Configurações</Link></span>
                             </p>
                         </li>
                         
-                        <li class="miniPerfil">
-                            <img class="perfilPic" src={perfil} alt=""></img>
-                            <span class="nome" id="nome">Nome</span>
-                            <span class="email" id="email">email@email.com</span>
+                        <li className="miniPerfil">
+                            <img className="perfilPic" src={perfil} alt=""></img>
+                            <span className="nome" id="nome">Nome</span>
+                            <span className="email" id="email">email@email.com</span>
                             <a href="##">
-                                <span onClick={handleLogout} class="icon-exit"><MdLogout/></span>
+                                <span onClick={handleLogout} className="icon-exit"><MdLogout/></span>
                             </a>
                         </li>
                     </ul>
