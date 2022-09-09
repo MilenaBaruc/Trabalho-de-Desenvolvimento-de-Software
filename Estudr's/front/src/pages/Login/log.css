@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:  #ffa14a;
+}
+
+.main{
+    margin-top: 5vh;
+    font-family: 'Montserrat', sans-serif;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bem-vindo{
+    padding: 15px;
+    text-align: center;
+
+}
+
+.bem-vindo > h1{
+    font-size: 40px;
+}
+
+.textinhop{
+    margin: 0px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.right-box{
+    width: 30vw;
+    height: 85vh;
+    margin: 10px 10px 10px 200px;
+    padding: 70px 40px 10px 40px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: #fff;
+    border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			0 10px 10px rgba(0,0,0,0.22);
+}
+
+.textinho{
+    margin: 0px 0px 30px 0px;
+}
+
+input {
+	background-color: #f2eee3;
+	border: none;
+	padding: 12px 15px;
+    border-radius: 10px;
+	margin: 15px 0px;
+	width: 100%;
+    outline: 0;
+}
+
+.right-box > button{
+    border-radius: 20px;
+	border: 1px solid #F2eee3;
+	background-color: #f7b656;
+	
+    margin-top: 30px;
+    color: black;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+.conta{
+    margin: 10px 0px 0px 0px;
+    color: rgb(119, 119, 119);
+}
+
+.right-box > a{
+    color: rgb(119, 119, 119);
+    margin: 0px;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
