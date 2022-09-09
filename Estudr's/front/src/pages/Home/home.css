@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+.home-main{
+    position: relative;
+    background-color: #F3CD84;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-titulo-inicio > .home-h1{
+    position: relative;
+    top: 0px;
+    left: -600px;
+    color: #271403;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.home-titulo-inicio > .home-hr{
+    padding-bottom: 20px;
+    left: 0px;
+    top: 0px;
+    border: 0px;
+    border-top: 3px solid #551D04;
+    width: 100vw;
+    box-sizing: content-box;
+}
+
+.home-mid{
+    display: flex;  
+    width: 90%; 
+    margin-left: 0px;
+    justify-content: space-between;
+}
+
+.home-tela-eventos{
+    position: relative;
+    left: 50px;
+    width: 320px;
+    height: 215px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-tela-eventos .home-h2{
+    text-align: justify;
+    padding: 4px 0px 0px 9px;
+    color: #774102;
+    text-decoration: underline #551D04;
+    font-size: 18px;
+}
+
+.home-tela-eventos .home-hr{
+    width: 10px;
+}
+
+.home-tela-materias{
+    position: relative;
+    left: 15px;
+    width: 720px;
+    height: 215px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-tela-materias .home-h2{
+    position: absolute;
+    color:#774102;  
+    padding: 5px 0px 0px 9px;  
+    font-size: 18px;
+    width: 100%;
+    text-decoration: underline #551D04;
+}
+
+.home-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.home-btn-sigaa , .home-btn-aprender, .home-btn-teams, .home-btn-email, .home-btn-onedrive{
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    width: 150px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 5px 5px 10px;
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.home-sigaa{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+    width: 60px;
+    height: 35px;
+    margin-right: 10px;
+    padding: 2px 2px;
+}
+
+.home-aprender{
+    position: absolute;
+    left: 320px;
+    top: 350px;
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+    padding: 4px 4px;
+}
+
+.home-teams{
+    position: absolute;
+    left: 610px;
+    top: 350px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    padding: 2px 2px;
+}
+
+.home-email-img{
+    position: absolute;
+    left: 880px;
+    top: 350px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    padding: 2px 2px;
+}
+
+.home-onedrive{
+    position: absolute;
+    left: 1170px;
+    top: 350px;
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+    padding: 2px 2px;
+}
+
+table{
+    width: 950px;
+    height: 200px;
+}
