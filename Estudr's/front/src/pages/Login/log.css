@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 
-body{
+.login-body{
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color:  #ffa14a;
+    height: 100vh;
+    width: 100vw;
 }
 
 .main{
-    margin-top: 5vh;
     font-family: 'Montserrat', sans-serif;  
     display: flex;
     justify-content: center;
@@ -25,7 +26,7 @@ body{
 
 }
 
-.bem-vindo > h1{
+.login-h1{
     font-size: 40px;
 }
 
@@ -35,17 +36,17 @@ body{
     font-size: 18px;
 }
 
-.right-box{
-    width: 30vw;
-    height: 85vh;
-    margin: 10px 10px 10px 200px;
-    padding: 70px 40px 10px 40px;
+
+.login-box{
+    width: 450px;
+    height: 800px;
 
     align-items: center;
     justify-content: center;
     text-align: center;
 
-    background-color: #fff;
+    height: 100px;
+    background-color: white;
     border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
 			0 10px 10px rgba(0,0,0,0.22);
@@ -55,7 +56,7 @@ body{
     margin: 0px 0px 30px 0px;
 }
 
-input {
+.log-input {
 	background-color: #f2eee3;
 	border: none;
 	padding: 12px 15px;
@@ -65,7 +66,7 @@ input {
     outline: 0;
 }
 
-.right-box > button{
+.login-btn{
     border-radius: 20px;
 	border: 1px solid #F2eee3;
 	background-color: #f7b656;
@@ -80,11 +81,11 @@ input {
     cursor: pointer;
 }
 
-button:active {
+.login-btn > button:active {
 	transform: scale(0.95);
 }
 
-button:focus {
+.login-btn > button:focus {
 	outline: none;
 }
 
@@ -93,7 +94,7 @@ button:focus {
     color: rgb(119, 119, 119);
 }
 
-.right-box > a{
+.login-link{
     color: rgb(119, 119, 119);
     margin: 0px;
     font-size: 13px;

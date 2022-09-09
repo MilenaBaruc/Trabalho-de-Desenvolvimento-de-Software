@@ -3,12 +3,12 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom
 //import logo from "./logo.svg";
 //import "./App.css";
 
-import Modal from './components/Modal/Modal';
 //import Cad from './pages/Cadastro/cad';
 import Log from './pages/Login/log';
-import Home from './pages/Home/home.js';
-import Config from './pages/Configuracoes/config.js';
-import Materias from './pages/materias/index.js';
+//import Home from './pages/Home/home.js';
+//import Config from './pages/Configuracoes/config.js';
+//import Materias from './pages/materias/index.js';
+//import Cad from './pages/Cadastro/cad';
 
 import { AuthProvider, AuthContext } from "./components/contexts/auth";
 import { MdPassword } from "react-icons/md";
@@ -33,10 +33,7 @@ function App() {
             <Router>
                 <AuthProvider>
                     <Routes>
-                        <Route exact path="/" element={<Log/>} />
-                        <Route exact path="/home" element={<Private><Home/></Private>} />
-                        <Route exact path="/materias" element={<Private><Materias/></Private>} />
-                        <Route exact path="/config" element={<Private><Config/></Private>} />
+                    <Route exact path="/" element={<Log/>} />
                     </Routes>
                 </AuthProvider>
             </Router>
@@ -46,5 +43,12 @@ function App() {
 export default App;
 
 /*
+
+
+                        <Route exact path="/home" element={<Private><Home/></Private>} />
+                        <Route exact path="/materias" element={<Private><Materias/></Private>} />
+                        <Route exact path="/config" element={<Private><Config/></Private>} />
+                        <Route exact path="/cadastro" element={<Cad/>} />
+
 
 */
