@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState, useContext, Component, Children } from "react";
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 //import logo from "./logo.svg";
 //import "./App.css";
@@ -10,20 +10,33 @@ import Home from './pages/Home/home.js';
 import Config from './pages/Configuracoes/config.js';
 import Materias from './pages/materias/index.js';
 
-import { AuthProvider} from "./components/contexts/auth";
+import { AuthProvider, AuthContext } from "./components/contexts/auth";
 import { MdPassword } from "react-icons/md";
 
 function App() {
 
+    const Private = ({ children }) => {
+        const{ authenticated, loading } = useContext(AuthContext);
+
+        if(loading){
+           return <div className="loading">Carregando...</div>
+        }
+
+        if(!authenticated){
+            return <Navigate to="/" />;
+        }
+
+        return children;
+    }
 
         return (
             <Router>
                 <AuthProvider>
                     <Routes>
                         <Route exact path="/" element={<Log/>} />
-                        <Route exact path="/home" element={<Home/>} />
-                        <Route exact path="/materias" element={<Materias/>} />
-                        <Route exact path="/config" element={<Config/>} />
+                        <Route exact path="/home" element={<Private><Home/></Private>} />
+                        <Route exact path="/materias" element={<Private><Materias/></Private>} />
+                        <Route exact path="/config" element={<Private><Config/></Private>} />
                     </Routes>
                 </AuthProvider>
             </Router>

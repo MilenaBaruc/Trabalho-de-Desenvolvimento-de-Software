@@ -30,7 +30,6 @@ export default function Log({setRegisterForm}){
             </div>
             <div class="right-box">
                 <h1>Entre aqui!</h1>
-                <p>{String(authenticated)}</p>
                     <p class="textinho">Use seu email e senha</p>
                     <form class="form" onSubmit={handleSubmit}>
                         <input 
