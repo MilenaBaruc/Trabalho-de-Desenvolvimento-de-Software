@@ -8,8 +8,8 @@ import { BsFillCalendarCheckFill } from "react-icons/bs";
 import { RiSettings3Fill } from "react-icons/ri";
 import { MdLogout } from "react-icons/md";
 
-import { AuthContext } from '../../components/contexts/auth';
-import "./sidebar-home.css";
+import { AuthContext } from '../contexts/auth';
+import "./sidebar.css";
 import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
 import logo from '../../assets/Logo Girassol.png'
 
@@ -26,7 +26,6 @@ export default function Bar(){
             <div className="sidebar-caixa">
                 <div className="sidebar-navigation">
                     <ul className="sidebar-ul">
-                        
                         <Link to="/home"><img className="sidebar-logo" src={logo} alt="logo"></img></Link>
                         <h1 className="sidebar-h1">Estuder's</h1>
                         
