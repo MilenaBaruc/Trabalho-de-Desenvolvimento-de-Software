@@ -6,7 +6,8 @@ import Iaprender from "../../assets/Imagens Botões Home/aprender.png";
 import Iteams from "../../assets/Imagens Botões Home/teams.png";
 import Iemail from "../../assets/Imagens Botões Home/email.png";
 import Ionedrive from "../../assets/Imagens Botões Home/onedrive.png";
-import Bar from "../../components/Barra Lateral/index-home.js"
+import Bar from "./index-home.js"
+
 export default function Home(){
     return( 
     <Fragment>

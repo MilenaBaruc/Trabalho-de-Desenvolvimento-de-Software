@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap%27');
+
+.main-sec{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #F3CD84;
+    height: 1500px;
+}
+
+.title-sec{
+    display: flex;
+}
+
+.sec-h1 {
+    position: relative;
+    top: 20px;
+    left: -130px;
+    color: #271403;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.sec-hr{
+    border-top: 3px solid #551D04;
+    width: 500px;
+    top: 50px;
+    box-sizing: content-box;
+    margin-left: 90px;
+}
+
+.top-sec {
+    position: relative;
+    top: 45px;
+    height: 300px;
+    width: 1280px;
+    border-bottom: 3px solid #774102 ;
+    padding:0;
+}
+
+.box-inf-sec{
+    display: flex;
+    gap: 50px;
+}
+
+.informacao-sec {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    height: 200px;
+    width: 700px;
+    background-color: white;
+}
+
+.informacao-sec > .sec-h2 {
+    padding: 5px 0 0px 9px;
+    margin:10px 0 0 10px ;
+}
+
+.sec-informaçoes-basicas{
+    display: none;
+}
+
+.informacao-sec > .sec-icon-info{
+    color: #ffa14a;
+}
+
+.informacao-sec .sec-h3 {
+    padding: 1px 0 0px 9px;
+    margin: 5px 0 0 10px ;
+}
+
+.nota-sec {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+}
+
+.nota-sec > .sec-h2 {
+    padding: 8px 3px 0 10px;
+    margin: 10px 0 0 10px;
+}
+
+.sec-dias-ate-prova{
+    position: relative;
+    top: 10px;
+    height: 60px;
+    width: 1050px;
+    margin-left: 35px;
+    background-color: white;
+}
+
+.sec-dias-ate-prova > .sec-h2{
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.principal-sec{
+    position: relative;
+    height: 462px;
+    top: 105px;
+}
+
+.sec-forma-de-avaliacao{  
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    height: 200px;
+    width: 1050px;
+    margin: 25px 10px 0 35px;
+}
+
+.sec-forma-de-avaliacao > .sec-h2 {
+    padding: 5px 0 0px 9px;
+    margin:10px 0 0 10px ;
+}

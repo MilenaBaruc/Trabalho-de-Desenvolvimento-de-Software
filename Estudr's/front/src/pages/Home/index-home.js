@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import {Fragment} from "react";
 
 import { AiFillHome } from "react-icons/ai" 
@@ -8,8 +8,8 @@ import { BsFillCalendarCheckFill } from "react-icons/bs";
 import { RiSettings3Fill } from "react-icons/ri";
 import { MdLogout } from "react-icons/md";
 
-import { AuthContext } from '../contexts/auth';
-import "./styles.css";
+import { AuthContext } from '../../components/contexts/auth';
+import "./sidebar-home.css";
 import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
 import logo from '../../assets/Logo Girassol.png'
 
