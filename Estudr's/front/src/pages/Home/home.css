@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+.home-main{
+    font-family: 'Bree Serif', serif;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F3CD84;
+}
+.home-h1{
+    position: relative;
+    top: 15px;
+    left: -600px;
+    color: #271403;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.home-hr{
+    padding-bottom: 20px;
+    left: 0px;
+    top: -10px;
+    border: 0px;
+    border-top: 3px solid #551D04;
+    width: 100vw;
+    box-sizing: content-box;
+}
+
+.home-mid{
+    display: flex;  
+    width: 90%; 
+    margin-left: 0px;
+    justify-content: space-between;
+}
+
+.home-tela-eventos{
+    position: relative;
+    left: 139px;
+    width: 320px;
+    height: 215px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-tela-eventos .home-h2{
+    text-align: justify;
+    padding: 4px 0px 0px 9px;
+    color: #774102;
+    text-decoration: underline #551D04;
+    font-size: 18px;
+}
+
+.home-tela-eventos .home-hr{
+    width: 10px;
+}
+
+.home-tela-materias{
+    position: relative;
+    left: -90px;
+    width: 600px;
+    height: 215px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-tela-materias .home-h2{
+    position: absolute;
+    color:#774102;  
+    padding: 5px 0px 0px 9px;  
+    font-size: 18px;
+    width: 100%;
+    text-decoration: underline #551D04;
+}
+
+.home-btn{
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.home-btn-sigaa{
+    position: absolute;
+    left: 0px;
+    top: 325px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    width: 130px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+}
+
+.home-sigaa{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 25px;
+    margin-right: 10px;
+    padding: 2px 2px;
+}
+
+ .home-btn-aprender{
+    position: absolute;
+    left: 200px;
+    top: 325px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    width: 130px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+}
+
+.home-aprender{
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 35px;
+    height: 20px;
+    margin-right: 10px;
+    padding: 4px 4px;
+}
+
+ .home-btn-teams{
+    position: absolute;
+    left: 400px;
+    top: 325px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    width: 120px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+}
+
+.home-teams{
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    padding: 2px 2px;
+}
+
+ .home-btn-email{
+    position: absolute;
+    left: 600px;
+    top: 325px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+}
+
+.home-email-img{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    padding: 2px 2px;
+}
+ 
+.home-btn-onedrive{
+    position: absolute;
+    left: 800px;
+    top: 325px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+}
+
+.home-onedrive{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+    padding: 2px 2px;
+}
+
+table{
+    position: absolute;
+    top: 430px;
+    left: 135px;
+    width: 950px;
+    height: 150px;
+}

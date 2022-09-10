@@ -1,37 +1,60 @@
-import React, { Component } from "react";
+import React, { useState, useContext, Component, Children } from "react";
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 //import logo from "./logo.svg";
 //import "./App.css";
 
-import LoginCadastro from './pages/LogCad/index.js';
+//import Cad from './pages/Cadastro/cad';
+//import Log from './pages/Login/log';
+import Home from './pages/Home/home.js';
 //import Config from './pages/Configuracoes/config.js';
 //import Materias from './pages/materias/index.js';
-import Cad from './pages/Cadastro/cad';
-import Log from './pages/Login/log'
-import Home from './pages/Home/home.js';
-import Bar from './components/Barra lateral/index.js'
+//import Secundaria from './pages/materias-sec/Secundaria';
+//import Cad from './pages/Cadastro/cad';
 
-class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { apiResponse: "" };
+import { AuthProvider, AuthContext } from "./components/contexts/auth";
+import { MdPassword } from "react-icons/md";
+
+function App() {
+
+    const Private = ({ children }) => {
+        const{ authenticated, loading } = useContext(AuthContext);
+
+        if(loading){
+           return <div className="loading">Carregando...</div>
+        }
+
+        if(!authenticated){
+            return <Navigate to="/" />;
+        }
+
+        return children;
     }
 
-    callAPI() {
-        fetch("http://localhost:3333/testAPI")
-            .then(res => res.text())
-            .then(res => this.setState({ apiResponse: res }))
-            .catch(err => err);
-    }
-
-    componentDidMount() {
-        this.callAPI();
-    }
-
-    render() {
         return (
-            <Log/>
+            <Router>
+                <AuthProvider>
+                    <Routes>
+                 
+                    <Route exact path="/" element={<Home/>} />
+
+                    </Routes>
+                </AuthProvider>
+            </Router>
         );
-    }
 }
 
 export default App;
+
+/*
+
+                       <Route exact path="/home" element={<Private><Home/></Private>} />
+                        <Route exact path="/home" element={<Private><Home/></Private>} />
+                        <Route exact path="/materias" element={<Private><Materias/></Private>} />
+                        <Route exact path="/config" element={<Private><Config/></Private>} />
+                        <Route exact path="/" element={<Log/>} />
+                        <Route exact path="/cadastro" element={<Cad/>} />
+
+
+
+
+*/

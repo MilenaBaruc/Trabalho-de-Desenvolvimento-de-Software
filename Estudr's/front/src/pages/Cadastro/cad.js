@@ -1,4 +1,6 @@
-import React, {Fragment} from "react";
+import React, { onClick, Fragment} from "react";
+import { Link } from "react-router-dom";
+
 import './styles.css';
 import girassol from "../../assets/girassol-cad.png"
 
@@ -6,22 +8,24 @@ export default function Cad(){
 
 	return(
 	<Fragment>
-        <div class="main">
-            <div class="bem-vindo">
-                <h1>Bem vindo ao Estuder's!</h1>
-                <p class="textinhop">Todas as suas matérias num único lugar!</p> 
-                <img class="imagem" width="300" src={girassol}/> 
+        <div className="cadastro-body">
+        <div className="cadastro-main">
+            <div className="cadastro-bem-vindo">
+                <h1 className="cadastro-h1">Bem vindo ao Estuder's!</h1>
+                <p className="cadastro-textinhop">Todas as suas matérias num único lugar!</p> 
+                <img className="cadastro-imagem" width="300" src={girassol}/> 
             </div>
-            <div class="right-box">
+            <div className="cadastro-right-box">
                 <h1>Crie sua conta</h1>
-                    <p class="textinho">Use seu email para se registrar!</p>
-                    <input type="text" placeholder="Nome" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Senha" />
-                    <button>Cadastrar</button>
-                    <p class="conta">Já possui uma conta?</p>
-                    <a href='#'>Entre por aqui!</a>
+                <p className="cadastro-textinho">Use seu email para se registrar!</p>
+                <input className="cadastro-input" type="text" placeholder="Nome" />
+                <input className="cadastro-input" type="email" placeholder="Email" />
+                <input className="cadastro-input" type="password" placeholder="Senha" />
+                <button className="cadastro-btn">Cadastrar</button>
+                <p className="cadastro-conta">Já possui uma conta?</p>
+                <p className="cadastro-p"><Link to="/">Entre por aqui!</Link></p>
             </div>
+        </div>
         </div>
 	</Fragment>
 	);
