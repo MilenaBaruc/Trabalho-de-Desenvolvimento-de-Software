@@ -25,36 +25,36 @@ export default function Bar(){
         <Fragment>
             <div className="sidebar-caixa">
                 <div className="sidebar-navigation">
-                    <ul>
+                    <ul className="sidebar-ul">
                         
                         <Link to="/home"><img className="sidebar-logo" src={logo} alt="logo"></img></Link>
-                        <h1>Estuder's</h1>
+                        <h1 className="sidebar-h1">Estuder's</h1>
                         
-                        <li className="sidebar-list active">
-                            <p>
-                            <span className="sidebar-icon"><Link to="/home"><AiFillHome/></Link></span>
-                            <span className="sidebar-title"><Link to="/home">Início</Link></span>
+                        <li className="sidebar-list">
+                            <p className="sidebar-p">
+                            <Link className="sidebar-icon" to="/home"><AiFillHome/></Link>
+                            <Link className="sidebar-a" to="/home">Início</Link>
                             </p>
                         </li>
 
                         <li className="sidebar-list">
-                            <p>
-                                <span className="sidebar-icon"><Link to="/materias"><HiClipboard/></Link></span>
-                                <span className="sidebar-title"><Link to="/materias">Disciplinas</Link></span>
+                            <p className="sidebar-p">
+                                <Link className="sidebar-icon" to="/materias"><HiClipboard/></Link>
+                                <Link className="sidebar-a" to="/materias">Disciplinas</Link>
                             </p>
                         </li>
                         
                         <li className="sidebar-list">
-                            <p>
-                                <span className="sidebar-icon"><Link to="/eventos"><BsFillCalendarCheckFill/></Link></span>
-                                <span className="sidebar-title"><Link to="/eventos">Tarefas e eventos</Link></span>
+                            <p className="sidebar-p">
+                                <Link className="sidebar-icon" to="/eventos"><BsFillCalendarCheckFill/></Link>
+                                <Link className="sidebar-a" to="/eventos">Tarefas e eventos</Link>
                             </p>
                         </li>
                         
                         <li className="sidebar-list">
-                            <p>        
-                                <span className="sidebar-icon"><Link to="/config"><RiSettings3Fill/></Link></span>
-                                <span className="sidebar-title"><Link to="/config">Configurações</Link></span>
+                            <p className="sidebar-p">        
+                                <Link className="sidebar-icon" to="/config"><RiSettings3Fill/></Link>
+                                <Link className="sidebar-a" to="/config">Configurações</Link>
                             </p>
                         </li>
                         

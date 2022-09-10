@@ -9,8 +9,7 @@ import Ionedrive from "../../assets/Imagens Botões Home/onedrive.png";
 import Bar from "../../components/Barra Lateral/index-home.js"
 export default function Home(){
     return( 
-        <Fragment>
-            <Bar/>
+    <Fragment>
           <div className="home-main">
             <div className="home-titulo-inicio">
                 <h1 className="home-h1">Início</h1>
@@ -64,11 +63,8 @@ export default function Home(){
 
 </table>
             </div>
-            
-          
           </div>
-          
-           
+            <Bar/>
         </Fragment>
    );
 }

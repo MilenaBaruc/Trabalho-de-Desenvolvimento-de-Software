@@ -33,7 +33,7 @@ function App() {
             <Router>
                 <AuthProvider>
                     <Routes>
-                    <Route exact path="/" element={<Private><Home/></Private>} />
+                    <Route exact path="/" element={<Home/>} />
                     </Routes>
                 </AuthProvider>
             </Router>
