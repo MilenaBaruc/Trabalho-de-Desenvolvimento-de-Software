@@ -60,9 +60,9 @@
     margin:10px 0 0 10px ;
 }
 
-.sec-informacoes-basicas{
+/*.sec-informacoes-basicas{
     display: none;
-}
+}*/
 
 .informacao-sec > .sec-icon-info{
     position: relative;
@@ -163,7 +163,7 @@
     justify-content: space-between;
 }
 
-.sec-titulo-conteudo h2{
+.sec-titulo-conteudo .sec-h2{
     margin: 5px 10px 0 10px;
 }
 
@@ -175,7 +175,7 @@
     box-shadow: 1px 1px 5px #be6a0a;
 }
 
-.entregas-sec h2 {
+.entregas-sec .sec-h2 {
     margin: 5px 10px 0 10px;
     text-align: center;
 }
