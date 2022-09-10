@@ -35,7 +35,12 @@ import { Link } from 'react-router-dom';
 
     var line = 1;
     const addInput = () => {
-        
+        var newdiv = document.createElement('div');
+        newdiv.innerHTML = '['+line +']';
+        newdiv.innerHTML += '<input type="text" name="text'+line +'_1" id="text'+line +'_1">';
+        newdiv.innerHTML += '<input type="text" name="text'+line +'_2" id="text'+line +'_2">';
+        //document.getElementById('sec-input-number-avaliações').appendChild(newdiv);
+        line++;
     }
 
     addInput('lines');
@@ -118,11 +123,9 @@ import { Link } from 'react-router-dom';
                         <input type="date" className="sec-input" id="sec-date3" placeholder="" ></input> <br/><br/>
 
 
-                        <h2 className="sec-h2">Cálculo da nota: </h2>
-                        <h3 className="sec-h2">Lista de exercícios semanais: </h3>
-                    </div>
-                    <div className="sec-box-principal">
-                    <div className="conteudos-sec">
+        <h2 className="sec-h2">Cálculo da nota: </h2>
+        <h3 className="sec-h2">Lista de exercícios semanais: </h3>
+    </div>
 
                     </div>
                     <div className="entregas-sec">
