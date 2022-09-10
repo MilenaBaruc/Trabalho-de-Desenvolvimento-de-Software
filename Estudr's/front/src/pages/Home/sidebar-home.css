@@ -9,31 +9,37 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow-x: hidden;
 
 }
 
 .sidebar-logo{
     position: absolute;
     top: 30px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .sidebar-caixa .sidebar-navigation .sidebar-h1{
     position: absolute;
     top: 20px;
-    left: 60px;
+    left: 80px;
     color: white;
     font-size: 30px;
 }
 
 .sidebar-icon{
     position: relative;
-    margin: 15px;
-    top: 40px;
+    padding: 0px 0px 0px 0px;
+    top: 80px;
     width: 10px;
     height: 10px;
     color: #fff;
+}
+
+.sidebar-p{
+    position: absolute;
+    margin-top: -10px;
 }
 
 .sidebar-a{
@@ -42,20 +48,20 @@
     font-size: 20px;
 
     position: relative;
-    left: 20px;
-    top: -43px;
+    left: 50px;
+    top: 10px;
     display: flex;
-    padding-left: 6px;
+    padding: 0px 0px 0px 0px;
     height: 60px;
     line-height: 60px;
     white-space: nowrap;
-    
 }
 
 /*Perfil inferior*/
 .sidebar-perfilPic{
     position: relative;
-    top: 0px;
+    top: 110px;
+    left: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -64,8 +70,8 @@
 .sidebar-nome{
     position: relative;
     display: block;
-    left: 50px;
-    top: -40px;
+    left: 70px;
+    top: 70px;
     color: white;
     font-size: 14px;
 }
@@ -73,8 +79,8 @@
 .sidebar-email{
     position: relative;
     display: block;
-    left: 45px;
-    top: -40px;
+    left: 70px;
+    top: 70px;
     color: white;
     font-size: 12px;
     opacity: 0.75;
@@ -109,96 +115,33 @@
 }
 
 .sidebar-navigation > .sidebar-ul{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-padding-left: 5px;
-padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 30px;
 }
 
 .sidebar-navigation > .sidebar-ul .sidebar-list{
-position: relative;
-list-style: none;
-width: 100%;
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
-}
-
-.sidebar-navigation > .sidebar-ul .sidebar-list .sidebar-a{
     position: relative;
-    display: flex;
-    width: 100%;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 20px;
-}
-
-.sidebar-navigation > .sidebar-ul .sidebar-list .sidebar-a .sidebar-icon{
-    position: relative;
+    top: 30px;
     display: block;
-    min-width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 70px;
-    color: white;
-    
-}
-
-.sidebar-navigation > .sidebar-ul .sidebar-list .sidebar-a .sidebar-icon{
-    position: relative;
-    font-size: 1.5rem;
-    z-index: 1;
-    color: white;
-}
-
-.sidebar-navigation > .sidebar-ul .sidebar-list .sidebar-a{
-position: relative;
-top: -3px;
-display: block;
-padding-left: 15px;
-height: 60px;
-line-height: 60px;
-white-space: nowrap;
+    padding-left: 15px;
+    height: 100px;
+    line-height: 60px;
 }
 
 .sidebar-navigation > .sidebar-ul .sidebar-list-active{
-
-    background: #FF7C01;
     width: 230px;
-    height: 30px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-.sidebar-list-active{
-    background: #FF7C01;
-}
-
-.sidebar-navigation > .sidebar-ul .sidebar-list-active .sidebar-a::before{
-position: absolute;
-top: -30px;
-right: 0px;
-width: 30px;
-height: 10px;
-border-radius: 50%;
-color: white;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    top: 30px;
+    display: block;
+    padding-left: 15px;
+    line-height: 60px;
 }
 
-.sidebar-navigation > .sidebar-ul .sidebar-list-active .sidebar-a::after{
-    content: '';
-    position: absolute;
-    top: -30px;
-    right: 0px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    }
 
-.sidebar-ul{
-    overflow-x: hidden;
-}
-    
-.sidebar-caixa{
-    height: 100vh;
-    overflow-x:hidden;
-}
