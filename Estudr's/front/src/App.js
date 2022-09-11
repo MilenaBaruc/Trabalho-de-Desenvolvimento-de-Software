@@ -6,12 +6,11 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom
 //import Cad from './pages/Cadastro/cad';
 //import Log from './pages/Login/log';
 import Home from './pages/Home/home.js';
-//import Config from './pages/Configuracoes/config.js';
-//import Materias from './pages/materias/index.js';
-//import Secundaria from './pages/materias-sec/Secundaria';
-//import Cad from './pages/Cadastro/cad';
+import Config from './pages/Configuracoes/config.js';
+import Materias from './pages/materias/index.js';
+import Secundaria from './pages/materias-sec/Secundaria';
 import PaginaEvento from "./pages/Página de eventos/Eventos";
-//import PopUp from "./components/PopUp Evento/popup";
+import PopUp from "./components/PopUp Evento/popup";
 
 
 import { AuthProvider, AuthContext } from "./components/contexts/auth";
@@ -38,7 +37,12 @@ function App() {
                 <AuthProvider>
                     <Routes>
                  
-                    <Route exact path="/" element={<Config/>} />
+                    <Route exact path="/" element={<Home/>} />
+                    <Route exact path="/materias" element={<Materias/>} />
+                    <Route exact path="/config" element={<Config/>} />
+                    <Route exact path="/materias-s" element={<Secundaria/>} />
+                    <Route exact path="/eventos" element={<PaginaEvento/>} />
+                    <Route exact path="/novoevento" element={<PopUp/>} />
 
                     </Routes>
                 </AuthProvider>
@@ -52,8 +56,7 @@ export default App;
 
                        <Route exact path="/home" element={<Private><Home/></Private>} />
                         <Route exact path="/home" element={<Private><Home/></Private>} />
-                        <Route exact path="/materias" element={<Private><Materias/></Private>} />
-                        <Route exact path="/config" element={<Private><Config/></Private>} />
+                        
                         <Route exact path="/" element={<Log/>} />
                         <Route exact path="/cadastro" element={<Cad/>} />
 
