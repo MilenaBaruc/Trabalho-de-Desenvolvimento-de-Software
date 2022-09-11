@@ -11,7 +11,7 @@ import Materias from './pages/materias/materias.js';
 import Secundaria from './pages/materias-sec/Secundaria';
 import PaginaEvento from "./pages/Página de eventos/Eventos";
 import PopUp from "./components/PopUp Evento/popup.js";
-
+import PopUpmat from "./components/PopUp Materia/popuomat.js"
 
 import { AuthProvider, AuthContext } from "./components/contexts/auth";
 import { MdHome, MdPassword } from "react-icons/md";
@@ -37,13 +37,14 @@ function App() {
                 <AuthProvider>
                     <Routes>
                  
-                    <Route exact path="/" element={<Log/>} />
+                    <Route exact path="/mat" element={<PopUpmat/>} />
                     <Route exact path="/cadastro" element={<Cad/>} />
                     <Route exact path="/Home" element={<Home/>} />
-                    <Route exact path="/materias" element={<Private><Materias/></Private>} />
-                    <Route exact path="/config" element={<Private><Config/></Private>} />
-                    <Route exact path="/materias-s" element={<Private><Secundaria/></Private>} />
-                    <Route exact path="/eventos" element={<Private><PaginaEvento/></Private>} />
+                    <Route exact path="/materias" element={<Materias/>} />
+                    <Route exact path="/config" element={<Config/>} />
+                    <Route exact path="/materias-s" element={<Secundaria/>} />
+                    <Route exact path="/eventos" element={<PaginaEvento/>} />
+                    <Route exact path="/" element={<Log/>} />
 
                     </Routes>
                 </AuthProvider>

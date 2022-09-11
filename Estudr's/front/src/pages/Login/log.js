@@ -24,7 +24,7 @@ export default function Log(){
 	<Fragment>
         <div className="login-body">
             <div className="login-main">
-                <div className="bem-vindo">
+                <div className="login-bem-vindo">
                     <h1 className="login-h1">Bem vindo ao Estuder's!</h1>
                     <p className="textinhop">Seu novo planner virtual!</p> 
                     <img className="imagem" width="300" src={girassol}/> 
@@ -47,9 +47,9 @@ export default function Log(){
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <button className="login-btn"><Link to="/home">Entrar</Link></button>
+                        <Link to="/home" className="login-btn-link"><button className="login-btn">Entrar</button></Link>
                         <p className="conta">Não possui uma conta?</p>
-                        <p className="login-link"><Link to="/cadastro">Crie uma aqui!</Link></p>
+                        <Link to="/cadastro" className="login-link"><p  className="login-link-p">Crie uma aqui!</p></Link>
                     </form>
                 </div>
             </div>

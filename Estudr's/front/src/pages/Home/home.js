@@ -65,6 +65,8 @@ export default function Home(){
 
 </table>
             </div>
+                <Bar/>
+
           </div>
         </Fragment>
    );

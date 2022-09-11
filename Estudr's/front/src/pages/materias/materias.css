@@ -47,7 +47,7 @@
     font-size: 25px;
     align-items: center;
     cursor: pointer;
-    box-shadow: 2px 2px 2px rgb(43, 41, 41);
+    box-shadow: 1px 1px 5px #be6a0a;
     color: white;
     font-family: 'Bree Serif', serif;
 }

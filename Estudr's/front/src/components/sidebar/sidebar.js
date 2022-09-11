@@ -19,13 +19,11 @@ import { getUsers } from "../services/api";
 export default function Bar(){
     const { logout } = useContext(AuthContext);
     const [users, setUsers] = useState([]);
-    const [loading, setloading] = useState(true);
 
     useEffect(() => {
         (async () => {
             const response = await getUsers();
             setUsers(response.data);
-            setloading(false);
         })();       
     }, []);
 
@@ -35,9 +33,6 @@ export default function Bar(){
         logout();
     };
 
-    if(loading){
-        return <div className="loading">Carregando...</div>;
-    }
 
     return(
         <Fragment>
