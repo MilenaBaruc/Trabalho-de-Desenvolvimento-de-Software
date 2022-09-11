@@ -62,7 +62,7 @@ export default function Bar(){
                             <span className="sidebar-nome" id="nome">Nome</span>
                             <span className="sidebar-email" id="email">email@email.com</span>
                             <a href="##">
-                                <span onClick={handleLogout} className="sidebar-icon-exit"><MdLogout/></span>
+                                <span onClick={handleLogout} className="sidebar-icon-exit"><MdLogout size={20} /></span>
                             </a>
                         </li>
                     </ul>

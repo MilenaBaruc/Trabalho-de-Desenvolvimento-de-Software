@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom
 //import Log from './pages/Login/log';
 //import Home from './pages/Home/home.js';
 import Config from './pages/Configuracoes/config.js';
-//import Materias from './pages/materias/index.js';
+//import Materias from './pages/materias/materias.js';
 //import Secundaria from './pages/materias-sec/Secundaria';
 //import Cad from './pages/Cadastro/cad';
 //import PaginaEvento from "./pages/Página de eventos/Eventos";

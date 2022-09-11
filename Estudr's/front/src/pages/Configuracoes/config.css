@@ -49,11 +49,12 @@
     width: 920px;
     height: 250px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     margin-left: 0px;
     padding: 20px 20px;
+    box-shadow: 2px 2px 2px rgb(41, 38, 38);
 }
 
 .config-h2{
