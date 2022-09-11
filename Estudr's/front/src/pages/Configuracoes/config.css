@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+.config-main{
+    background-color: #F3CD84;
+    min-height: 100vh;
+    border: 0;
+    margin: 0; 
+    font-family: 'Bree Serif', serif;
+}
+
+.config-perfil{
+    position: relative;
+    right: 200px;
+    top: 0px;
+    display: flex;
+    margin-top: 0px;
+}
+
+.config-perfil-image{
+    position: relative;
+    left: 89px;
+    top: 0px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 10px 55px 40px 170px;    
+}
+
+.config-h1{
+    position: relative;
+    left: 60px;
+    top: 20px;
+    font-size: 38px;
+    color:#4b2800;
+}
+
+.config-h3{
+    position: relative;
+    left: -190px;
+    top: 65px;
+    opacity: 0.75;
+    font-size: 24px;
+    color: #4b2800;
+}
+
+.config-box{
+    position: relative;
+    left: 100px;
+    top: -10px;
+    width: 920px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    padding: 20px 20px;
+}
+
+.config-h2{
+    position: inherit;
+    left: 20px;
+    font-size: 25px;
+    color: #774102;
+    margin: 0;
+    text-decoration: none;
+}
+.config-message{
+    position: absolute;
+    left: 550px;
+    bottom: 270px;
+    max-width: 410px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+    word-break: keep-all;
+    color: #774102;
+
+}
+.config-input-box{
+    width: 300px;
+    height: 20px;
+    margin: 20px 0px 0px 20px;
+    border: 2px solid #774002ad;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    color: #774102;    
+}
+
+.config-input-box::placeholder{
+    font-size: 15px;
+    color: #774102;
+    opacity: 0.75;
+}
+
+.config-btn-save{
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    background-color: #919B1A;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.config-btn-save:active{
+    background: #6D750B;
+}
+
+.config-btn-delete{
+    position: absolute;
+    top: 481px;
+    left: 600px;
+    width: 200px;
+    height: 45px;
+    background-color: #D05416;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.config-btn-delete:active{
+    background: #B03C01;
+}
