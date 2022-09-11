@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+.sidebar-caixa{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.sidebar-logo{
+    position: absolute;
+    top: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.sidebar-caixa .sidebar-navigation .sidebar-h1{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    color: white;
+    font-size: 30px;
+}
+
+.sidebar-icon{
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    top: 80px;
+    width: 10px;
+    height: 10px;
+    color: #fff;
+}
+
+.sidebar-p{
+    position: absolute;
+    margin-top: -10px;
+}
+
+.sidebar-a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+    position: relative;
+    left: 50px;
+    top: 10px;
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+/*Perfil inferior*/
+.sidebar-perfilPic{
+    position: relative;
+    top: 110px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar-nome{
+    position: relative;
+    display: block;
+    left: 70px;
+    top: 70px;
+    color: white;
+    font-size: 14px;
+}
+
+.sidebar-email{
+    position: relative;
+    display: block;
+    left: 70px;
+    top: 70px;
+    color: white;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.sidebar-icon-exit{
+    position: relative;
+    display: block;
+    left: 190px;
+    top: 50px;
+    color: #fff;
+}
+
+/*fim do perfil inferior*/
+
+.sidebar-navigation{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100vh;
+    background: #774102;
+    width: 70px;
+    border-radius: 5px 0px 0px 5px;
+    border-left: 10px solid #774102;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+
+.sidebar-navigation:hover{
+    width: 235px;
+}
+
+.sidebar-navigation > .sidebar-ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 30px;
+}
+
+.sidebar-navigation > .sidebar-ul .sidebar-list{
+    position: relative;
+    top: 30px;
+    display: block;
+    padding-left: 15px;
+    height: 100px;
+    line-height: 60px;
+}
+
+.sidebar-navigation > .sidebar-ul .sidebar-list-active{
+    width: 230px;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    top: 30px;
+    display: block;
+    padding-left: 15px;
+    line-height: 60px;
+}
+
+
