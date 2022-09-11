@@ -52,15 +52,3 @@ function App() {
 
 export default App;
 
-/*
-
-                       <Route exact path="/home" element={<Private><Home/></Private>} />
-                        <Route exact path="/home" element={<Private><Home/></Private>} />
-                        
-                        <Route exact path="/" element={<Log/>} />
-                        <Route exact path="/cadastro" element={<Cad/>} />
-
-
-
-
-*/
