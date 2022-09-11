@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import {Fragment} from "react";
 
@@ -13,13 +13,26 @@ import "./sidebar.css";
 import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
 import logo from '../../assets/Logo Girassol.png'
 
+import { getUsers } from "../services/api";
+
 
 export default function Bar(){
     const { logout } = useContext(AuthContext);
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+            const response = await getUsers();
+            setUsers(response.data);
+        })();       
+    }, []);
+
+    
     
     const handleLogout = () => {
         logout();
     };
+
 
     return(
         <Fragment>
@@ -61,6 +74,13 @@ export default function Bar(){
                             <img className="sidebar-perfilPic" src={perfil} alt=""></img>
                             <span className="sidebar-nome" id="nome">Nome</span>
                             <span className="sidebar-email" id="email">email@email.com</span>
+                            <ul className="sidebar-ul-perfil-inferior">{
+                                users.map((user) => (
+                                    <li key={user._id}>
+                                        {user.name} - {user.email}
+                                    </li>
+                                ))
+                            }</ul>  
                             <a href="##">
                                 <span onClick={handleLogout} className="sidebar-icon-exit"><MdLogout size={20} /></span>
                             </a>

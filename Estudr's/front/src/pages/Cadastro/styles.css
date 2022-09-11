@@ -86,6 +86,11 @@
 	outline: none;
 }
 
+.cadastro-btn-link{
+    text-decoration: none;
+    color:#551D04;
+}
+
 .cadastro-conta{
     margin: 10px 0px 0px 0px;
     color: rgb(119, 119, 119);
@@ -97,4 +102,9 @@
     font-size: 13px;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.cadastro-link-log{
+    color: rgb(119, 119, 119);
+    text-decoration: none;
 }

@@ -1,29 +1,16 @@
 {
   "users": [
     {
-      "id": 1,
+      "_id": 1,
       "name": "Maria Alice",
-      "email": "mariaalice@gmail.com"
+      "email": "mariaalice@gmail.com",
+      "password": 1234
     },
     {
+      "_id": 2,
       "email": "victorhugo@gmail.com",
       "name": "Victor",
-      "id": 2
-    },
-    {
-      "email": "nome@gmail.com",
-      "name": "Nome",
-      "id": 3
-    },
-    {
-      "email": "nome@gmail.com",
-      "name": "Nome",
-      "id": 4
-    },
-    {
-      "email": "nome@gmail.com",
-      "name": "Nome",
-      "id": 5
+      "password": 1234
     }
   ],
   "materias": [

@@ -11,6 +11,7 @@ import Bar from "../../components/sidebar/sidebar.js"
 export default function Home(){
     return( 
     <Fragment>
+        <Bar/>
           <div className="home-main">
             <div className="home-titulo-inicio">
                 <h1 className="home-h1">Início</h1>
@@ -64,8 +65,9 @@ export default function Home(){
 
 </table>
             </div>
+                <Bar/>
+
           </div>
-            <Bar/>
         </Fragment>
    );
 }

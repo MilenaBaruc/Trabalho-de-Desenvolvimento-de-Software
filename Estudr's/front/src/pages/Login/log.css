@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.bem-vindo{
+.login-bem-vindo{
     padding: 15px;
     text-align: center;
 
@@ -80,6 +80,11 @@
     cursor: pointer;
 }
 
+.login-btn-link{
+    text-decoration: none;
+    color: #551D04;
+}
+
 .login-btn:active {
 	transform: scale(0.95);
 }
@@ -93,10 +98,14 @@
     color: rgb(119, 119, 119);
 }
 
-.login-link{
+.login-link-p{
     color: rgb(119, 119, 119);
     margin: 0px;
     font-size: 13px;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.login-link{
+    color: rgb(119, 119, 119);
 }
