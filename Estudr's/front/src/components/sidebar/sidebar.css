@@ -96,7 +96,7 @@
 /*fim do perfil inferior*/
 
 .sidebar-navigation{
-    position: absolute;
+    position: fixed;
     right: 0px;
     bottom: 0px;
     height: 100vh;
