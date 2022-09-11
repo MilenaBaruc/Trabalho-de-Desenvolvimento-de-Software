@@ -13,6 +13,8 @@ import "./sidebar.css";
 import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
 import logo from '../../assets/Logo Girassol.png'
 
+import { getUsers }
+
 
 export default function Bar(){
     const { logout } = useContext(AuthContext);

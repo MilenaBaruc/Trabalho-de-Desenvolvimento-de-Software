@@ -2,7 +2,7 @@ import React, { useState, createContext, useEffect,} from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { api, createSession } from "../../services/api.js"
+import { api, createSession } from "../services/api.js"
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
