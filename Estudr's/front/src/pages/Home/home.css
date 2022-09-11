@@ -227,7 +227,11 @@
 table{
     position: absolute;
     top: 430px;
-    left: 135px;
+    left: 165px;
     width: 950px;
     height: 150px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+
 }
