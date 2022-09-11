@@ -11,6 +11,8 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom
 //import Secundaria from './pages/materias-sec/Secundaria';
 //import Cad from './pages/Cadastro/cad';
 import PaginaEvento from "./pages/Página de eventos/Eventos";
+//import PopUp from "./components/PopUp Evento/popup";
+
 
 import { AuthProvider, AuthContext } from "./components/contexts/auth";
 import { MdPassword } from "react-icons/md";
