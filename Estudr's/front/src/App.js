@@ -38,7 +38,7 @@ function App() {
                 <AuthProvider>
                     <Routes>
                  
-                    <Route exact path="/" element={<PaginaEvento/>} />
+                    <Route exact path="/" element={<Config/>} />
 
                     </Routes>
                 </AuthProvider>
