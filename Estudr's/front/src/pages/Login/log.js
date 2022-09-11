@@ -47,7 +47,7 @@ export default function Log(){
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <button className="login-btn">Entrar</button>
+                        <button className="login-btn"><Link to="/home">Entrar</Link></button>
                         <p className="conta">Não possui uma conta?</p>
                         <p className="login-link"><Link to="/cadastro">Crie uma aqui!</Link></p>
                     </form>

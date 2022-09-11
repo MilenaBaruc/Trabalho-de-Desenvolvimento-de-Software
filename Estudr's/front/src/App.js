@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom
 //import logo from "./logo.svg";
 //import "./App.css";
 
-//import Cad from './pages/Cadastro/cad';
-//import Log from './pages/Login/log';
+import Cad from './pages/Cadastro/cad';
+import Log from './pages/Login/log';
 import Home from './pages/Home/home.js';
 import Config from './pages/Configuracoes/config.js';
 import Materias from './pages/materias/materias.js';
@@ -37,12 +37,13 @@ function App() {
                 <AuthProvider>
                     <Routes>
                  
-                    <Route exact path="/" element={<Home/>} />
+                    <Route exact path="/" element={<Log/>} />
+                    <Route exact path="/cadastro" element={<Cad/>} />
                     <Route exact path="/Home" element={<Home/>} />
-                    <Route exact path="/materias" element={<Materias/>} />
-                    <Route exact path="/config" element={<Config/>} />
-                    <Route exact path="/materias-s" element={<Secundaria/>} />
-                    <Route exact path="/eventos" element={<PaginaEvento/>} />
+                    <Route exact path="/materias" element={<Private><Materias/></Private>} />
+                    <Route exact path="/config" element={<Private><Config/></Private>} />
+                    <Route exact path="/materias-s" element={<Private><Secundaria/></Private>} />
+                    <Route exact path="/eventos" element={<Private><PaginaEvento/></Private>} />
 
                     </Routes>
                 </AuthProvider>
