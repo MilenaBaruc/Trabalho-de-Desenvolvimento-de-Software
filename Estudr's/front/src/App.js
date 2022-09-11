@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom
 //import Log from './pages/Login/log';
 import Home from './pages/Home/home.js';
 import Config from './pages/Configuracoes/config.js';
-import Materias from './pages/materias/index.js';
+import Materias from './pages/materias/materias.js';
 import Secundaria from './pages/materias-sec/Secundaria';
 import PaginaEvento from "./pages/Página de eventos/Eventos";
 import PopUp from "./components/PopUp Evento/popup.js";
@@ -38,11 +38,11 @@ function App() {
                     <Routes>
                  
                     <Route exact path="/" element={<Home/>} />
+                    <Route exact path="/Home" element={<Home/>} />
                     <Route exact path="/materias" element={<Materias/>} />
                     <Route exact path="/config" element={<Config/>} />
                     <Route exact path="/materias-s" element={<Secundaria/>} />
                     <Route exact path="/eventos" element={<PaginaEvento/>} />
-                    <Route exact path="/novoevento" element={<PopUp/>} />
 
                     </Routes>
                 </AuthProvider>
