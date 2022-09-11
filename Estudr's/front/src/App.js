@@ -10,7 +10,7 @@ import Config from './pages/Configuracoes/config.js';
 import Materias from './pages/materias/index.js';
 import Secundaria from './pages/materias-sec/Secundaria';
 import PaginaEvento from "./pages/Página de eventos/Eventos";
-import PopUp from "./components/PopUp Evento/popup";
+import PopUp from "./components/PopUp Evento/popup.js";
 
 
 import { AuthProvider, AuthContext } from "./components/contexts/auth";

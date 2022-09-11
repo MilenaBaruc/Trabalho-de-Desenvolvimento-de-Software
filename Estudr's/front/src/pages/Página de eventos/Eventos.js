@@ -5,8 +5,8 @@ import { MdAdd } from 'react-icons/md'
 
 import Calendar from 'react-calendar'
 //import 'react-calendar/dist/Calendar.css';
-import "../../components/PopUp Evento/popup";
-import PopUp from "../../components/PopUp Evento/popup";
+import "../../components/PopUp Evento/popup.js";
+import PopUp from "../../components/PopUp Evento/popup.js";
 
 
 function PaginaEvento() {
