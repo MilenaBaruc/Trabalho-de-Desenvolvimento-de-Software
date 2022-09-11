@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe&family=Bree+Serif&family=Mouse+Memoirs&display=swap');
+
+.popUp-body{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    background: #f7dca967;
+}
+
+.popUp-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    border: 10px solid #F3CD84;
+    background-color: #F3CD84;
+    font-family: 'Bree Serif', serif;
+    border-radius: 10px;
+}
+
+.popUp-title {
+    font-size: 28px;
+    color: #965000;
+    line-height: 20px;
+}
+
+.popUp-input-area{
+    display: flex;
+}
+
+.popUp-label {
+    color: #774102;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.popUp-text-area--input{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+
+.popUp-text-area--input .popUp-label:nth-child(3) {
+    margin-top: 2px;
+}
+
+
+.popUp-text-area--input .popUp-label:nth-child(2) {
+    margin-top: 4px;
+}
+
+
+.popUp-input-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+.popUp-campotexto{
+    height: 20px;
+    width: 250px;
+    border: 1px solid #774102;
+    border-radius: 10px;
+}
+
+.popUp-caixaselect {
+    border: 1px solid #774102;
+    height: 20px;
+    border-radius: 10px;
+    width: 257px;
+}
+
+.popUp-campodata {
+    border: 1px solid #774102;
+    width: 100px;
+    height: 22px;
+    border-radius: 10px;
+
+}
+
+.popUp-btn-area{
+    display: flex;
+    justify-content: right;
+    width: 440px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.popUp-btn-cancel {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 5px 30px 5px 30px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background: #D05416;
+    transition: all ease .1s;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.popUp-btn-cancel:hover {
+    background: #df5b18;
+}
+
+.popUp-btn-add {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 5px 50px 5px 50px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background: #919B1A;
+    transition: all ease .1s;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.popUp-btn-add:hover {
+    background-color: #a4af23;
+}

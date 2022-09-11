@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe&family=Bree+Serif&family=Mouse+Memoirs&display=swap');
 
+.pai-eventos{
+  min-height: 100%;
+}
 .evento-main{
     margin: 0;
     padding: 0;
@@ -268,4 +271,3 @@ body::-webkit-scrollbar {
   .react-calendar--selectRange .react-calendar__tile--hover {
     background-color: #e6e6e6;
   }
-  

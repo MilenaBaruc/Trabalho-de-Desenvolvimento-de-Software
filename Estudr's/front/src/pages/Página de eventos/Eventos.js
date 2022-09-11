@@ -1,15 +1,16 @@
-import React, { useState, onClick, Fragment } from "react";
+import React, { useState, onClick } from "react";
 
-import "./evento.css";
-import { MdAdd } from 'react-icons/md'
+import { MdAdd } from 'react-icons/md';
+import { AuthContext } from '../../components/contexts/auth';
 
 import Calendar from 'react-calendar'
-//import 'react-calendar/dist/Calendar.css';
-import "../../components/PopUp Evento/popup";
-import PopUp from "../../components/PopUp Evento/popup";
+import PopUp from "../../components/PopUp Evento/popup.js";
+import Bar from "../../components/sidebar/sidebar"
 
-
+import "./evento.css";
+import "../../components/PopUp Evento/popup.js";
 function PaginaEvento() {
+
 
     const [isPopUpOpen, setPopUpOpen] = useState(false);
 
@@ -31,6 +32,7 @@ function PaginaEvento() {
     
 
     return(
+        
             <div className="evento-main">
                 <div className="evento-cabecalho">
                     <h1 className="evento-h1">Eventos</h1>
@@ -54,6 +56,7 @@ function PaginaEvento() {
                 </div>
 
                 {isPopUpOpen ? <PopUp closePopUp={closePopUp}/> : null}
+                <Bar/>
             </div>
     );
 }
