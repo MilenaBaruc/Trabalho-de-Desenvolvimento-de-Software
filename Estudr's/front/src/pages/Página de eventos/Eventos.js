@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, { useState, onClick, Fragment } from "react";
 
 import "./evento.css";
 import { MdAdd } from 'react-icons/md'
@@ -6,9 +6,20 @@ import { MdAdd } from 'react-icons/md'
 import Calendar from 'react-calendar'
 //import 'react-calendar/dist/Calendar.css';
 import "../../components/PopUp Evento/popup";
+import PopUp from "../../components/PopUp Evento/popup";
 
 
 function PaginaEvento() {
+
+    const [isPopUpOpen, setPopUpOpen] = useState(false);
+
+    function openPopUp(){
+        setPopUpOpen(true)
+    }
+
+    function closePopUp(){
+        setPopUpOpen(false)
+    }
 
     function abrirEvento(){
 
@@ -23,7 +34,7 @@ function PaginaEvento() {
             <div className="evento-main">
                 <div className="evento-cabecalho">
                     <h1 className="evento-h1">Eventos</h1>
-                    <button className="evento-add-botao">
+                    <button className="evento-add-botao" onClick={openPopUp}>
                         <MdAdd size={70} className="evento-add-icon"/>
                     </button>                    
                 </div>
@@ -41,6 +52,8 @@ function PaginaEvento() {
                     </form>
 
                 </div>
+
+                {isPopUpOpen ? <PopUp closePopUp={closePopUp}/> : null}
             </div>
     );
 }
