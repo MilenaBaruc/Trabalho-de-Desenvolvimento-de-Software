@@ -56,6 +56,29 @@
     background: #facb55;
 }
 
+.materias-btn-mat{
+    position: relative;
+    left: 100px;
+    top: 42px;
+    width: 220px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #f7a65b;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #be6a0a;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+.materias-btn-mat:active{
+    background: #facb55;
+}
+
 .materias-btn-img{
     position: relative;
     width: 110px;

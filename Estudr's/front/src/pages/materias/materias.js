@@ -30,6 +30,7 @@ export default function Materias(){
             <div className="materias-divdobtn">
                 <button className="materias-btn-add" type="submit" onClick={ openPopUpmat }> 
                 <MdAdd size={110} color="white" className="materia-add-icon" onClick={ openPopUpmat }/> Adicionar nova matéria </button>
+                <button className="materias-btn-mat" type="submit">Cálculo 2</button>
             </div>
         </div>
         {isPopUpmat ? <PopUpmat closePopUpmat={ closePopUpmat } /> : null}
