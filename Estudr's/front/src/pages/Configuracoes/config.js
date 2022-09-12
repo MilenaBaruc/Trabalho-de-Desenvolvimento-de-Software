@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 import "./config.css";
 import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
@@ -36,7 +37,7 @@ export default function Config(){
                 </ul>
                 </div>
 
-                <button className="config-btn-delete">Excluir conta</button>
+                <Link to="/"><button className="config-btn-delete">Excluir conta</button></Link>
 
             </div>
         </Fragment>

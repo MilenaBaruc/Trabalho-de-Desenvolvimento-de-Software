@@ -1,4 +1,5 @@
 import React, { onClick, Fragment, useState} from "react";
+import { Link } from "react-router-dom"
 import add from '../../assets/add.png';
 import "./materias.css";
 import Bar from "../../components/sidebar/sidebar.js"
@@ -30,7 +31,7 @@ export default function Materias(){
             <div className="materias-divdobtn">
                 <button className="materias-btn-add" type="submit" onClick={ openPopUpmat }> 
                 <MdAdd size={110} color="white" className="materia-add-icon" onClick={ openPopUpmat }/> Adicionar nova matéria </button>
-                <button className="materias-btn-mat" type="submit">Cálculo 2</button>
+                <Link to="/materias-s"><button className="materias-btn-mat" type="submit">Cálculo 2</button></Link>
             </div>
         </div>
         {isPopUpmat ? <PopUpmat closePopUpmat={ closePopUpmat } /> : null}

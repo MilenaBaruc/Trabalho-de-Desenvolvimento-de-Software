@@ -4,6 +4,7 @@ import "./styles.css";
 import { HiPencil } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
       
+import Bar from "../../components/sidebar/sidebar";
       
       
       const diasAteProva = () => {
@@ -47,7 +48,7 @@ import { Link } from 'react-router-dom';
 
     return(
         <Fragment>
-           
+           <Bar/>
             <div className="main-sec">
                 <div className="title-sec">
                     <div className="titulo-inicio-sec">
