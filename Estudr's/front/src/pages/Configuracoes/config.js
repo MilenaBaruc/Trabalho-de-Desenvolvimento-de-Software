@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 
 import "./config.css";
 import perfil from '../../assets/ImagensPerfil/verde escuro.jpg'
