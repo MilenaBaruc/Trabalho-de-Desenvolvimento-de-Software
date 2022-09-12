@@ -37,7 +37,8 @@ export default function Log(){
                             className="log-imput"
                             type="email"
                             placeholder="Email" 
-                            value={email} 
+                            value={email}
+                            id="email" 
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         <input 
@@ -45,10 +46,11 @@ export default function Log(){
                             type="password" 
                             placeholder="Senha"
                             value={password}
+                            id="password"
                             onChange={(e) => setPassword(e.target.value)}
                         />
 
-                        <Link to="/home" className="login-btn-link"><button className="login-btn">Entrar</button></Link>
+                        <Link to={authenticated? "/home" : "/"} className="login-btn-link"><button className="login-btn">Entrar</button></Link>
 
                         <p className="conta">Não possui uma conta?</p>
                         <Link to="/cadastro" className="login-link"><p  className="login-link-p">Crie uma aqui!</p></Link>

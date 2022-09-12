@@ -40,9 +40,8 @@ function App() {
 
                     <Route exact path="/mat" element={<PopUpmat/>} />
                     <Route exact path="/" element={<Log/>} />
-
                     <Route exact path="/cadastro" element={<Cad/>} />
-                    <Route exact path="/Home" element={<Home/>} />
+                    <Route exact path="/home" element={<Home/>} />
                     <Route exact path="/materias" element={<Materias/>} />
                     <Route exact path="/config" element={<Config/>} />
                     <Route exact path="/materias-s" element={<Secundaria/>} />

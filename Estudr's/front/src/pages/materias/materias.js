@@ -4,6 +4,7 @@ import "./materias.css";
 import Bar from "../../components/sidebar/sidebar.js"
 import { MdAdd } from 'react-icons/md';
 import PopUpmat from "../../components/PopUp Materia/popuomat.js"
+import botao from "../../components/botao/botao.js"
 
 export default function Materias(){
 
@@ -15,9 +16,6 @@ export default function Materias(){
 
     function closePopUpmat(){
         setIsPopUpmat(false)
-    }
-    
-    function newMateria(){
     }
     return( 
     <Fragment>

@@ -3,6 +3,11 @@ import React, { onClick, Fragment } from "react";
 import "./popupmat.css";
 
 export default function PopUpmat( { closePopUpmat } ){
+    function newMateria(){
+        const div = document.createElement('div')
+        div.append(div)
+    }
+    
   
     return(
         <Fragment>
@@ -26,7 +31,7 @@ export default function PopUpmat( { closePopUpmat } ){
 
                 <div className="mat-popUp-btn-area">
                     <button className="mat-popUp-btn-cancel" onClick={ closePopUpmat }>Cancelar</button>
-                    <button className="mat-popUp-btn-add" type="submit" onClick= { closePopUpmat } >Adicionar</button>
+                    <button className="mat-popUp-btn-add" type="submit" onClick= { closePopUpma, newMateria }>Adicionar</button>
                 </div>
                 </div>
             </div>
