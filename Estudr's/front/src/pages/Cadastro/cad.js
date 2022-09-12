@@ -14,7 +14,6 @@ const PWD_REGEX = /^(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
 
 const Cad = () => {
-    const userRef = userRef();
     const errRef = useRef();
 
     const [user, setUser] = useState('');
@@ -31,10 +30,6 @@ const Cad = () => {
 
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
-
-    useEffect(() => {
-        userRef.current.focus();
-    }, [])
 
     useEffect(() => {
         const result = USER_REGEX.test(user);
@@ -74,16 +69,12 @@ const Cad = () => {
                 <h1>Crie sua conta</h1>
                 <p className="cadastro-textinho">Use seu email para se registrar!</p>
 
-                <FontAwesomeIcon icon={faCheck} className={validName ? "valid" : "hide"} />
-                <FontAwesomeIcon icon={faTimes} className={validName || !user ? "hide" : "invalid"} />
-
 
                 <input 
                     className="cadastro-input" 
                     type="text" 
                     placeholder="Nome"
                     id="username"
-                    ref={userRef}
                     autoComplete="off"
                     onChange={(e) => setUser(e.target.value)} 
                     required
@@ -92,13 +83,6 @@ const Cad = () => {
                     onFocus={() => setUserFocus(true)}
                     onBlur={() => setUserFocus(false)} 
                 />
-
-                <p id="uidnote" className={userFocus && user && !validName ? "instructions" : "offscreen"}>
-                    <FontAwesomeIcon icon={faInfoCircle} />
-                    De 4 a 24 caracteres.<br />
-                    Deve começar com uma letra.<br />
-                    Letras, números, underlines e hífens são permitidos.
-                </p>
 
                 <input className="cadastro-input" type="email" placeholder="Email" />
                 <input className="cadastro-input" type="password" placeholder="Senha" />
