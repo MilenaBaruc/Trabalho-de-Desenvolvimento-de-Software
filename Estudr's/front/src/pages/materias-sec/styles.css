@@ -6,7 +6,9 @@
     box-sizing: border-box;
     text-decoration: none;
     background-color: #F3CD84;
-    height: 1500px;
+    height: 1000px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .title-sec{
@@ -121,10 +123,14 @@
 
 .principal-sec{
     position: relative;
-    height: 462px;
-    top: 105px;
+    height: 442px;
     top: 30px;
 }
+
+.sec-h3-infs{
+    padding: 5px 5px 5px 0px;
+}
+
 
 .sec-forma-de-avaliacao{  
     display: flex;
@@ -141,41 +147,94 @@
     margin:10px 0 0 10px ;
 }
 
-
-.sec-box-principal{
-    display: flex;
-    height: 220px;
-    margin: 10px 0px 0px 35px;
-    width: 1050px;
+.sec-forma-de-avaliacao > .sec-icon-principal{
+    position: relative;
+    left: 290px;
+    top: -40px;
+    color: #ffa14a;
 }
 
- .conteudo-sec{
-    height: 230px;
-    width: 700px;
-    background-color: white;
-    box-shadow: 1px 1px 5px #be6a0a;
-}
-
-.conteudo-sec > .sec-titulo-conteudo{
-    height: 35px;
+.sec-titulos-avaliacao{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 15px;
+    width: 1050px;
+    flex-wrap: wrap;
 }
 
-.sec-titulo-conteudo .sec-h2{
-    margin: 5px 10px 0 10px;
+.sec-titulos-avaliacao > .sec-h2{
+    padding: 5px 0px 0px 9px;
+    margin:10px 280px 0px 10px ;
 }
 
-.entregas-sec{
-    height: 230px;
-    margin-left: 55px;
-    width: 295px;
+.sec-box-lista-prova{
+    display: block;
+    flex-direction:column ;
+    height: 110px;
+    width: 600px;
+    margin:0px 80px 0px 40px ;
+}
+
+.sec-box-lista-prova > .sec-h4-lista{
+   padding: 0 0 0 20px;
+}
+
+.sec-box-lista-prova > .sec-h4-prova{
+    padding: 0 0 0 20px;
+ }
+
+.sec-box-principal{
+    display: flex;
+    margin: 10px 0px 0px 36px;
+    width: 1050px;
+    gap:50px;
+}
+
+.sec-box-principal > .sec-titulo-conteudo{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
     background-color: white;
     box-shadow: 1px 1px 5px #be6a0a;
 }
 
-.entregas-sec .sec-h2 {
-    margin: 5px 10px 0 10px;
+.sec-titulo-conteudo >.sec-h2{
+    padding: 5px 20px 0px 9px;
+    margin:10px 0px 0 10px ;
+}
+
+.sec-titulo-conteudo > .sec-icon-conteudo{
+    position: relative;
+    left:-5px;
+    bottom: -265px;
+    color: #ffa14a;
+}
+
+.entregas-sec-tudo{
+    display: flex;
+    height: 300px;
+    gap: 50px;
+}
+
+.entregas-sec{
+    height: 300px;
+    margin: 0 0 0 30px;
+    width: 470px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #be6a0a;
+}
+
+.entregas-sec > .sec-h2 {
+    margin-top: 15px;
     text-align: center;
+}
+
+.entregas-sec > .sec-icon-entrega{
+    position: relative;
+    left:435px;
+    bottom: -203px;
+    color: #ffa14a;
 }

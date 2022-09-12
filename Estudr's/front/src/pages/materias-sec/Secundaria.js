@@ -67,18 +67,16 @@ import Bar from "../../components/sidebar/sidebar";
 
                            <div className="sec-form">
                             <form className="sec-informacoes-basicas">
-                                <label className="sec-h3" for="creditos">Créditos:</label>
-                                <input className="sec-input" id="creditos" type="number"></input>
+                                <label className="sec-h3-infs" for="creditos">Créditos:</label>
                                 <br></br>
 
-                                <label className="sec-h3" for="prof">Professora:</label>
-                                <input className="sec-input" id="prof" type="text"></input><br></br>
+                                <label className="sec-h3-infs" for="prof">Professora:</label>
+                                <br></br>
 
-                                <label className="sec-h3" for="dias-de-aula">Dias de aula:</label>
-                                <input className="sec-input" id="dias-de-aula" type="text"></input><br></br>
+                                <label className="sec-h3-infs" for="dias-de-aula">Dias de aula:</label>
+                                <br></br>
 
-                                <label className="sec-h3" for="numero-reprovações">Quantidade de reprovações:</label>
-                                <input className="sec-input" id="numero-reprovações" type="number"></input>
+                                <label className="sec-h3-infs" for="numero-reprovações">Quantidade de reprovações:</label>
                             </form>
                             </div> 
 
@@ -96,43 +94,37 @@ import Bar from "../../components/sidebar/sidebar";
 
                 <div className="principal-sec">
                     <div className="sec-forma-de-avaliacao">
+                       <div className="sec-titulos-avaliacao">
+                      
                         <h2 className="sec-h2">Forma de avaliação</h2>
-                        
-                        <label className="sec-formas-de-avaliacao-label">Quantas formas de avaliação você deseja adicionar?</label>
-                        <input type="number" className="sec-input" id="sec-input" ></input> <br/><br/>
-
-                        <label className="sec-formas-de-avaliacao-label">Prova 1:</label>
-                        <input type="number" className="sec-input" id="sec-input" placeholder="Nota" ></input>
-                        <input type="date" className="sec-input" id="sec-date1" placeholder="" ></input> <br/><br/>
-
-                        <label className="sec-formas-de-avaliacao-label">Prova 2:</label>
-                        <input type="number" className="sec-input" id="sec-input" placeholder="Nota"></input>
-                        <input type="date" className="sec-input" id="sec-date2" placeholder="" ></input> <br/><br/>
-
-                        <label className="sec-formas-de-avaliacao-label">Prova 3:</label>
-                        <input type="number" className="sec-input" id="sec-input" placeholder="Nota"></input>
-                        <input type="date" className="sec-input" id="sec-date3" placeholder="" ></input> <br/><br/>
-
                         <h2 className="sec-h2">Cálculo da nota: </h2>
-                        <h3 className="sec-h2">Lista de exercícios semanais: </h3>
+                       </div>
+                        
+                        <div className="sec-box-lista-prova">
+                        </div>
+                        <a className="sec-icon-principal" onClick={botaoEditar} ><HiPencil size={28}/></a>
                     </div>
-                </div>
 
-                <div className="entregas-sec">
-                    <div className="sec-box-principal">                                   
-                        <div className="conteudo-sec">
+                 <div className="entregas-sec-tudo">
+                      
+                      <div className="sec-box-principal">                                   
+                        
                             <div className="sec-titulo-conteudo">  
                                 <h2 className="sec-h2">Conteúdos</h2>
                                 <h2 className="sec-h2">Exercícios</h2>
+                                <a className="sec-icon-conteudo" onClick={botaoEditar} ><HiPencil size={28}/></a>
                             </div>
-                        </div>
-                    </div>
 
-                    <div className="entregas-sec">
+                           <div className="entregas-sec">
                         <h2 className="sec-h2">Entregas</h2>
-                    </div>
-                </div>
-            </div>
+                        <a className="sec-icon-entrega" onClick={botaoEditar} ><HiPencil size={28}/></a>
+                           </div>
+                      </div>
+
+                 </div>
+
+                 </div>
+             </div>
 
         </Fragment>
     );
